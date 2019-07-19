@@ -10,9 +10,11 @@
   <body>
 
     <header class="page-header">
-      <div class="page-header__nav-wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/" width="75" height="22" alt="Логотип Пинк на главной">
+      <div class="container">
+        <a class="page-header__logo-link" href="index.html">
+          <figure class="page-header__image">
+            <img class="page-header__logo-image" src="img/" width="75" height="22" alt="Логотип Пинк на главной">
+          </figure>
         </a>
         <nav class="page-header__navigation">
           <button class="page-header__toggle-btn" type="button">Открыть меню</button>
@@ -31,27 +33,27 @@
             </li>
           </ul>
         </nav>
+        <p class="page-header__text">Фотографии пользователей</p>
       </div>
-      <p class="page-header__text">Фотографии пользователей</p>
     </header>
 
     <main class="page-main">
       <section class="content-panorama">
         <h2 class="visually-hidden">Фотографии наших пользователей</h2>
         <p class="content-panorama__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <div class="content-panorama__wrapper">
-          <a class="content-panorama__link" href="#">
-            <img class="content-panorama__image" src="img/" height="137">
-          </a>
+        <figure class="content-panorama__image">
+          <img class="content-panorama__picture" src="img/" height="137">
           <div class="container">
             <a class="content-panorama__link-btn" href="#">Панорама дня</a>
-            <div class="content-panorama__comment_box comment_box">
-              <p class="comment_box__name">Анна<span class="comment_box__time-ago"> (5 минут назад)</span></p>
-              <p class="comment_box__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <p class="comment_box__like">
-                <button class="comment_box__like-btn">Нравится:</button><span class="comment_box__like-count"> 215</span>
-              </p>
-            </div>
+          </div>
+        </figure>
+        <div class="container">
+          <div class="content-panorama__comment_box comment_box">
+            <p class="comment_box__name">Анна<span class="comment_box__time-ago"> (5 минут назад)</span></p>
+            <p class="comment_box__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="comment_box__like">
+              <button class="comment_box__like-btn">Нравится:</button><span class="comment_box__like-count"> 215</span>
+            </p>
           </div>
         </div>
       </section>
@@ -61,7 +63,9 @@
           <ul class="content-photos__comment-list comment-list">
             <li class="comment-list__item">
               <div class="comment-list__comment_box comment_box">
-                <img class="comment_box__image" src="img/" width="280" height="180" alt="Изображение автомобиля">
+                <figure class="comment_box__image">
+                  <img class="comment_box__picture" src="img/" width="280" height="180" alt="Изображение автомобиля">
+                </figure>
                 <p class="comment_box__name">Левон<span class="comment_box__time-ago"> (5 часов назад)</span></p>
                 <p class="comment_box__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <p class="comment_box__like">
@@ -71,7 +75,9 @@
             </li>
             <li class="comment-list__item">
               <div class="comment-list__comment_box comment_box">
-                <img class="comment_box__image" src="img/" width="280" height="180" alt="Изображение барабанов">
+                <figure class="comment_box__image">
+                  <img class="comment_box__picture" src="img/" width="280" height="180" alt="Изображение барабанов">
+                </figure>
                 <p class="comment_box__name">Антон<span class="comment_box__time-ago"> (12 часов назад)</span></p>
                 <p class="comment_box__text">Соседи будут рады!</p>
                 <p class="comment_box__like">
@@ -81,7 +87,9 @@
             </li>
             <li class="comment-list__item">
               <div class="comment-list__comment_box comment_box">
-                <img class="comment_box__image" src="img/" width="280" height="180" alt="Изображение отзеркалившего неба в стеклах здания">
+                <figure class="comment_box__image">
+                  <img class="comment_box__picture" src="img/" width="280" height="180" alt="Изображение отзеркалившего неба в стеклах здания">
+                </figure>
                 <p class="comment_box__name">Борис<span class="comment_box__time-ago"> (20 часов назад)</span></p>
                 <p class="comment_box__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <p class="comment_box__like">
@@ -91,7 +99,9 @@
             </li>
             <li class="comment-list__item">
               <div class="comment-list__comment_box comment_box">
-                <img class="comment_box__image" src="img/" width="280" height="180" alt="Изображение &laquo;Кубанская бахча&raquo;">
+                <figure class="comment_box__image">
+                  <img class="comment_box__picture" src="img/" width="280" height="180" alt="Изображение &laquo;Кубанская бахча&raquo;">
+                </figure>
                 <p class="comment_box__name">Сергей<span class="comment_box__time-ago"> (25 часов назад)</span></p>
                 <p class="comment_box__text">Самая кубанская в мире!</p>
                 <p class="comment_box__like">
@@ -101,7 +111,9 @@
             </li>
             <li class="comment-list__item">
               <div class="comment-list__comment_box comment_box">
-                <img class="comment_box__image" src="img/" width="280" height="180" alt="Изображение взгляда вниз с горы">
+                <figure class="comment_box__image">
+                  <img class="comment_box__picture" src="img/" width="280" height="180" alt="Изображение взгляда вниз с горы">
+                </figure>
                 <p class="comment_box__name">Максим<span class="comment_box__time-ago"> (40 часов назад)</span></p>
                 <p class="comment_box__text">Где снег-то?</p>
                 <p class="comment_box__like">
@@ -111,7 +123,9 @@
             </li>
             <li class="comment-list__item">
               <div class="comment-list__comment_box comment_box">
-                <img class="comment_box__image" src="img/" width="280" height="180" alt="Изображение крыла самолета">
+                <figure class="comment_box__image">
+                  <img class="comment_box__picture" src="img/" width="280" height="180" alt="Изображение крыла самолета">
+                </figure>
                 <p class="comment_box__name">Надежда<span class="comment_box__time-ago"> (45 часов назад)</span></p>
                 <p class="comment_box__text">Всем GM и взаимные лайки!</p>
                 <p class="comment_box__like">
@@ -120,19 +134,22 @@
               </div>
             </li>
           </ul>
+          <p class="content-photos__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-        <p class="content-photos__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
 
       <section class="content-editor">
+        <h2 class="visually-hidden">Редактор Ваших фотографий</h2>
         <!--  контент фото редактора  -->
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="container">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="img/" width="146" height="40" alt="Логотип Пинк в подвале сайта">
+          <figure class="page-footer__image">
+            <img class="page-footer__logo-image" src="img/" width="146" height="40" alt="Логотип Пинк в подвале сайта">
+          </figure>
         </a>
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
