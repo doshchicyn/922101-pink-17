@@ -110,11 +110,11 @@
               <ul class="data-contacts__contact-list contact-list">
                 <li class="contact-list__item">
                   <label class="contact-list__value" for="contact-list__phone">Номер телефона</label>
-                  <input class="contact-list__field" id="contact-list__phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                  <input class="contact-list__field" id="contact-list__phone" type="tel" name="phone" title="Номер должен содержать от 7 до 11 цифр и начинаться с 7" value="" pattern="\d{7,11}" placeholder="Номер, пожалуйста">
                 </li>
                 <li class="contact-list__item">
                   <label class="contact-list__value" for="contact-list__email">Адрес почты</label>
-                  <input class="contact-list__field" id="contact-list__email" type="email" name="email" placeholder="Введите почту *" required>
+                  <input class="contact-list__field" id="contact-list__email" type="email" name="email" title="Адрес должен быть указан в формате &quot;mail@domain.ru&quot;" placeholder="Введите почту *" required>
                 </li>
               </ul>
             </fieldset>
