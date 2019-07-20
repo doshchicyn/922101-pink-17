@@ -140,7 +140,31 @@
 
       <section class="content-editor">
         <h2 class="visually-hidden">Редактор Ваших фотографий</h2>
-        <!--  контент фото редактора  -->
+        <div class="container">
+          <form class="content-editor__form upload-form" action="https://echo.htmlacademy.ru" method="post" name="upload-form">
+            <figure class="upload-form__image">
+              <img class="upload-form__picture" src="img/" alt="Изображение в редакторе фотографий">
+            </figure>
+            <div class="upload-form__controls-wrap">
+              <ul class="upload-form__filters-list filter-setting">
+                <li class="filter-setting__item">
+                  <label class="filter-setting__icon filter-setting__crop"></label>
+                  <input class="filter-setting" type="range" min="0" max="10" step="1" value="7">
+                </li>
+                <li class="filter-setting__item">
+                  <label class="filter-setting__icon filter-setting__fill"></label>
+                  <input class="filter-setting" type="range" min="0" max="10" step="1" value="2">
+                </li>
+                <li class="filter-setting__item">
+                  <label class="filter-setting__icon filter-setting__contrast"></label>
+                  <input class="filter-setting" type="range" min="0" max="10" step="1" value="5">
+                </li>
+              </ul>
+              <button class="upload-form__upload-btn form-btn" type="submit">Запостить</button>
+              <button class="upload-form__reset-btn form-btn" type="reset">Отмена</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
