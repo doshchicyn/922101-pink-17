@@ -146,20 +146,23 @@
             <div class="upload-form__controls-wrap">
               <ul class="upload-form__filters-list filter-setting">
                 <li class="filter-setting__item">
-                  <label class="filter-setting__icon filter-setting__crop"></label>
-                  <input class="filter-setting" type="range" min="0" max="10" step="1" value="7">
+                  <label class="filter-setting__icon filter-setting__icon--crop">
+                    <input class="filter-setting__marker" id="" type="range" min="0" max="10" step="1" value="7">
+                  </label>
                 </li>
                 <li class="filter-setting__item">
-                  <label class="filter-setting__icon filter-setting__fill"></label>
-                  <input class="filter-setting" type="range" min="0" max="10" step="1" value="2">
+                  <label class="filter-setting__icon filter-setting__icon--fill">
+                    <input class="filter-setting__marker" type="range" min="0" max="10" step="1" value="2">
+                  </label>
                 </li>
                 <li class="filter-setting__item">
-                  <label class="filter-setting__icon filter-setting__contrast"></label>
-                  <input class="filter-setting" type="range" min="0" max="10" step="1" value="5">
+                  <label class="filter-setting__icon filter-setting__icon--contrast">
+                    <input class="filter-setting__marker" type="range" min="0" max="10" step="1" value="5">
+                  </label>
                 </li>
               </ul>
-              <button class="upload-form__upload-btn form-btn" type="submit">Запостить</button>
-              <button class="upload-form__reset-btn form-btn" type="reset">Отмена</button>
+              <button class="upload-form__form-btn upload-form__form-btn--upload" type="submit">Запостить</button>
+              <button class="upload-form__form-btn upload-form__form-btn--reset" type="reset">Отмена</button>
             </div>
           </form>
         </div>
