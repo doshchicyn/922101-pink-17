@@ -1,8 +1,45 @@
-@import url("fonts.less");
-
-@bg-color: red;
+@import "normalize.less";
+@import "fonts.less";
+@import "variables.less";
+@import "blocks/page-header.less";
 
 body {
-  width: 320px;
+  min-width: 320px;
   background-color: @bg-color;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// планшетная версия
+@media (min-width: @tablet-width) {
+  body {
+    background-color: green;
+  }
+}
+
+// декстопная версия
+@media (min-width: @desktop-width) {
+  body {
+    background-color: yellow;
+  }
 }
