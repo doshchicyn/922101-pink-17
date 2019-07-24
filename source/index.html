@@ -9,28 +9,30 @@
   <body>
 
     <header class="page-header">
-      <div class="container page-header__column">
+      <div class="container">
         <a class="page-header__logo-link">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк на главной">
         </a>
-        <nav class="page-header__nav page-header__nav--closed">
-          <button class="page-header__toggle-btn" type="button">Открыть меню</button>
-          <ul class="page-header__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <nav class="page-header__nav page-header__nav--closed">
+        <div class="container">
+          <button class="page-header__toggle-btn page-header__toggle-btn--hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <ul class="page-header__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
