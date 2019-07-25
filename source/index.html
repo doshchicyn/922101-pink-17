@@ -9,27 +9,29 @@
   <body>
 
     <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo-link">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк на главной">
-        </a>
-      </div>
-      <nav class="page-header__nav page-header__nav--closed">
-        <div class="container">
-          <button class="page-header__toggle-btn page-header__toggle-btn--hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
-        <ul class="page-header__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Главная</a>
+      <nav class="page-header__nav">
+        <ul class="page-header__menu-rows main-menu main-menu--opened main-menu--nojs">
+          <li class="main-menu__item main-menu__item--filled container">
+            <a class="main-menu__logo-link">
+              <img class="main-menu__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк на главной">
+            </a>
+            <button class="main-menu__toggle-btn main-menu__toggle-btn--hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+          <li class="main-menu__item">
+            <ul class="main-menu__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -167,5 +169,21 @@
         </div>
       </section>
     </main>
+    <script>
+      var navMain = document.querySelector('.main-menu');
+      var navToggle = document.querySelector('.main-menu__toggle-btn');
+
+      navMain.classList.remove('main-menu--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-menu--closed')) {
+          navMain.classList.remove('main-menu--closed');
+          navMain.classList.add('main-menu--opened');
+        } else {
+          navMain.classList.add('main-menu--closed');
+          navMain.classList.remove('main-menu--opened');
+        }
+      });
+    </script>
   </body>
 </html>
