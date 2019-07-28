@@ -1,0 +1,145 @@
+.main-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-menu__item {
+  position: relative;
+}
+
+.main-menu__logo-link {
+  display: block;
+  width: 80px;
+  height: 66px;
+  padding: 22px 0;
+  line-height: 0;
+  font-size: 0;
+  text-decoration: none;
+}
+
+.main-menu__toggle-btn {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 50px;
+  height: 66px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.main-menu--closed .main-menu__toggle-btn {
+  right: 20px;
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 -10px 0 0 #ffffff, 0 10px 0 0 #ffffff;
+  }
+}
+
+.main-menu--opened .main-menu__toggle-btn {
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 23px;
+    display: block;
+    width: 4px;
+    height: 25px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-menu--closed .main-menu__item:nth-child(2) {
+  display: none;
+}
+
+.main-menu--opened .main-menu__item--filled {
+  background-color: #283645;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+}
+
+.main-menu--opened .site-list__item {
+  background-color: #283645;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #485461;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+}
+
+.main-menu--nojs .main-menu__item:nth-child(2) {
+  display: block;
+  position: static;
+  background-color: #283645;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #485461;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+}
+
+.main-menu--nojs .site-list__item {
+  background-color: #283645;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #485461;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+}
+
+.main-menu--nojs .main-menu__item--filled {
+  background-color: #283645;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+}
+
+.main-menu--nojs .main-menu__toggle-btn {
+  display: none;
+}
+
+.main-menu__list {
+  .drop-list();
+}
+
+// @media (min-width: @tablet-width) {
+//   .main-menu__item:nth-child(1) {
+//     height: 110px;
+//   }
+
+//   .main-menu__logo-link {
+//     padding-top: 27px;
+//     padding-bottom: 43px;
+//     width: 147px;
+//     height: 40px;
+//   }
+// }
