@@ -3,87 +3,92 @@
   <head>
     <meta charset="utf-8">
     <title>Главная Пинк</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo-link">
-          <img class="page-header__logo-image" src="img/" width="75" height="22" alt="Логотип Пинк на главной">
-        </a>
-        <nav class="page-header__navigation">
-          <button class="page-header__toggle-btn" type="button">Открыть меню</button>
-          <ul class="page-header__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="page-header__nav">
+        <ul class="page-header__menu-list main-menu main-menu--closed main-menu--nojs">
+          <li class="main-menu__item main-menu__item--filled container">
+            <a class="main-menu__logo-link">
+              <img class="main-menu__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк в шапке сайта">
+            </a>
+            <button class="main-menu__toggle-btn main-menu__toggle-btn--hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </li>
+          <li class="main-menu__item">
+            <ul class="main-menu__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <section class="mobile-apps">
         <h2 class="visually-hidden">Ссылки для скачивания мобильного приложения Пинк</h2>
-        <div class="container">
-          <figure class="mobile-apps__image">
-            <img class="mobile-apps__front-image" src="img/" width="320" height="286" alt="Изображение телефона в руке на главной странице">
-          </figure>
-          <div class="mobile-apps__column">
-            <p class="mobile-apps__text">Взгляните на жизнь иначе!</p>
-            <a class="mobile-apps__link" href="https://www.apple.com/ru/ios/app-store">Скачать приложение</a>
-            <ul class="mobile-apps__list device-list">
-              <li class="device-list__item">
-                <a class="device-list__link device-list__link--itunes" href="https://www.apple.com/ru/ios/app-store/" aria-label="Скачать из AppStore"></a>
-              </li>
-              <li class="device-list__item">
-                <a class="device-list__link device-list__link--playmarket" href="https://play.google.com/store" aria-label="Скачать из Play Market"></a>
-              </li>
-              <li class="device-list__item">
-                <a class="device-list__link device-list__link--msstore" href="https://www.microsoft.com/ru-ru/store/apps" aria-label="Скачать из Microsoft Store"></a>
-              </li>
-            </ul>
-            <p class="mobile-apps__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
+        <figure class="mobile-apps__image">
+          <img class="mobile-apps__front-image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Изображение телефона в руке на главной странице">
+        </figure>
+        <div class="mobile-apps__column container">
+          <p class="mobile-apps__text">Взгляните на жизнь иначе!</p>
+          <a class="mobile-apps__link" href="https://www.apple.com/ru/ios/app-store">Скачать приложение</a>
+          <ul class="mobile-apps__list device-list">
+            <li class="device-list__item">
+              <a class="device-list__link device-list__link--itunes" href="https://www.apple.com/ru/ios/app-store/" aria-label="Скачать из AppStore"></a>
+            </li>
+            <li class="device-list__item">
+              <a class="device-list__link device-list__link--playmarket" href="https://play.google.com/store" aria-label="Скачать из Play Market"></a>
+            </li>
+            <li class="device-list__item">
+              <a class="device-list__link device-list__link--msstore" href="https://www.microsoft.com/ru-ru/store/apps" aria-label="Скачать из Microsoft Store"></a>
+            </li>
+          </ul>
+          <p class="mobile-apps__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
 
       <section class="content">
         <h1 class="visually-hidden">Мобильное приложение "Пинк" для раскрашивания серых будней в розовый цвет!</h1>
         <div class="container">
-          <div class="content__box">
-            <p class="content__text question">Устали от серости мегаполиса?</p>
-            <p class="content__text answer">Нам есть, что вам предложить!</p>
+          <div class="content__features-box features">
+            <p class="features__text features__text--question">Устали от серости мегаполиса?</p>
+            <p class="features__text features__text--answer">Нам есть, что вам<br> предложить!</p>
+            <ul class="features__list">
+              <li class="features__item">
+                <h3 class="features__title">Поднимает настроение</h3>
+                <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="features__item">
+                <h3 class="features__title">Меняет мир вокруг</h3>
+                <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="features__item">
+                <h3 class="features__title">Заводит новых друзей</h3>
+                <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+            <figure class="features__image">
+              <img class="features__phone-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение телефона со смайликом">
+            </figure>
           </div>
-          <ul class="content__feature-list feautures-list">
-            <li class="feautures-list__item">
-              <h3 class="feautures-list__title">Поднимает настроение</h3>
-              <p class="feautures-list__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="feautures-list__item">
-              <h3 class="feautures-list__title">Меняет мир вокруг</h3>
-              <p class="feautures-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="feautures-list__item">
-              <h3 class="feautures-list__title">Заводит новых друзей</h3>
-              <p class="feautures-list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <figure class="content__image">
-            <img class="content__phone-image" src="img/" width="157" height="320" alt="Изображение телефона со смайликом">
-          </figure>
+          <div class="content__facts-box facts">
+
+          </div>
         </div>
       </section>
 
@@ -91,13 +96,13 @@
         <h2 class="visually-hidden">Отзывы наших пользователей</h2>
         <div class="container reviews__list">
           <blockquote class="reviews__item">
-            <cite class="reviews__author-name">Николай Петров</cite>
+            <cite class="reviews__author-name">Николай Петров<span class="reviews__author-data">25 лет, водитель трамвая</span></cite>
             <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </blockquote>
-          <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--current" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+          <p class="reviews__toggles slider-toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
           </p>
         </div>
       </section>
@@ -106,29 +111,29 @@
         <h2 class="visually-hidden">Тарифы и расценки</h2>
         <div class="container">
           <table class="prices__table rate-table">
-            <tr class="rate-table__row">
+            <tr class="rate-table__row rate-table__row--noallborder">
               <th class="rate-table__hcell rate-table__hcell--hidden"></th>
               <th class="rate-table__hcell">База<br><span class="rate-table__rate-value">1,99 USD</span></th>
               <th class="rate-table__hcell rate-table__hcell--hit">Стандарт<br><span class="rate-table__rate-value">3,99 USD</span></th>
               <th class="rate-table__hcell">Анлим<br><span class="rate-table__rate-value">9,99 USD</span></th>
             </tr>
             <tr class="rate-table__row">
-              <td class="rate-table__name-rate rate-table__cell rate-table__cell--hidden">Розовый фильтр</td>
-              <td class="rate-table__cell rate-table__available-rate"><span class="rate-table__field rate-table__field--hidden">Розовый фильтр</span></td>
-              <td class="rate-table__cell rate-table__available-rate"><span class="rate-table__field rate-table__field--hidden">Розовый фильтр</span></td>
-              <td class="rate-table__cell rate-table__available-rate"><span class="rate-table__field rate-table__field--hidden">Розовый фильтр</span></td>
+              <td class="rate-table__cell rate-table__cell-name ">Розовый фильтр</td>
+              <td class="rate-table__cell rate-table__cell--available"><span class="rate-table__field rate-table__field--hidden">Розовый фильтр</span></td>
+              <td class="rate-table__cell rate-table__cell--available"><span class="rate-table__field rate-table__field--hidden">Розовый фильтр</span></td>
+              <td class="rate-table__cell rate-table__cell--available"><span class="rate-table__field rate-table__field--hidden">Розовый фильтр</span></td>
             </tr>
             <tr class="rate-table__row">
-                <td class="rate-table__name-rate rate-table__cell rate-table__cell--hidden">Смайлики</td>
-                <td class="rate-table__cell rate-table__disable-rate"><span class="rate-table__field rate-table__field--hidden">Смайлики</span></td>
-                <td class="rate-table__cell rate-table__available-rate"><span class="rate-table__field rate-table__field--hidden">Смайлики</span></td>
-                <td class="rate-table__cell rate-table__available-rate"><span class="rate-table__field rate-table__field--hidden">Смайлики</span></td>
+              <td class="rate-table__cell rate-table__cell-name">Смайлики</td>
+              <td class="rate-table__cell rate-table__cell--disable rate-table__cell--notopborder"><span class="rate-table__field rate-table__field--hidden">Смайлики</span></td>
+              <td class="rate-table__cell rate-table__cell--available rate-table__cell--notopborder"><span class="rate-table__field rate-table__field--hidden">Смайлики</span></td>
+              <td class="rate-table__cell rate-table__cell--available"><span class="rate-table__field rate-table__field--hidden">Смайлики</span></td>
             </tr>
             <tr class="rate-table__row">
-                <td class="rate-table__name-rate rate-table__cell rate-table__cell--hidden">Комментарии</td>
-                <td class="rate-table__cell rate-table__disable-rate"><span class="rate-table__field rate-table__field--hidden">Комментарии</span></td>
-                <td class="rate-table__cell rate-table__disable-rate"><span class="rate-table__field rate-table__field--hidden">Комментарии</span></td>
-                <td class="rate-table__cell rate-table__available-rate"><span class="rate-table__field rate-table__field--hidden">Комментарии</span></td>
+              <td class="rate-table__cell rate-table__cell-name">Комментарии</td>
+              <td class="rate-table__cell rate-table__cell--disable"><span class="rate-table__field rate-table__field--hidden">Комментарии</span></td>
+              <td class="rate-table__cell rate-table__cell--disable"><span class="rate-table__field rate-table__field--hidden">Комментарии</span></td>
+              <td class="rate-table__cell rate-table__cell--available"><span class="rate-table__field rate-table__field--hidden">Комментарии</span></td>
             </tr>
           </table>
           <p class="prices__toggles slider__toggles">
@@ -142,29 +147,28 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты и местоположение на карте</h2>
         <figure class="contacts__image">
-          <img class="contacts__map-image" src="" alt="">
+          <img class="contacts__map-picture" src="img/bg-map-mobile@1x.jpg" width="320" height="645" alt="Изображение с адресом на карте">
         </figure>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563652232215!5m2!1sru!2sru" width="" height="645" frameborder="0" allowfullscreen></iframe>
-        <div class="contacts__wrap">
-          <div class="container">
-            <p class="contacts__text">Остались вопросы?<br>Свяжитесь с нами!</p>
-            <ul class="contacts__list contact-options">
-              <li class="contact-options__item">
-                <p class="contact-options__text">Звоните:</p>
-                <p class="contact-options__value"><a class="contact-options__phone" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
-              </li>
-              <li class="contact-options__item">
-                <p class="contact-options__text">Пишите:</p>
-                <p class="contact-options__value"><a class="contact-options__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-              </li>
-              <li class="contact-options__item">
-                <p class="contact-options__text">Приезжайте в гости:</p>
-                <address class="contact-options__value">ул. Большая<br>Конюшенная, 19/8</address>
-              </li>
-            </ul>
-          </div>
+        <div class="contacts__wrap container">
+          <p class="contacts__text">Остались вопросы?<br>Свяжитесь с нами!</p>
+          <ul class="contacts__list contact-options">
+            <li class="contact-options__item">
+              <h3 class="contact-options__title">Звоните:</h3>
+              <p class="contact-options__value"><a class="contact-options__phone" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+            </li>
+            <li class="contact-options__item">
+              <h3 class="contact-options__title">Пишите:</h3>
+              <p class="contact-options__value"><a class="contact-options__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            </li>
+            <li class="contact-options__item">
+              <h3 class="contact-options__title">Приезжайте в гости:</h3>
+              <address class="contact-options__value">ул. Большая<br>Конюшенная, 19/8</address>
+            </li>
+          </ul>
         </div>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563652232215!5m2!1sru!2sru" width="320" height="219" frameborder="0" allowfullscreen></iframe>
       </section>
     </main>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

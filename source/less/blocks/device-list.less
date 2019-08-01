@@ -1,0 +1,38 @@
+.device-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 225px;
+}
+
+.device-list__item {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+}
+
+.device-list__link {
+  display: block;
+  text-decoration: none;
+  background-repeat: no-repeat;
+
+  &--itunes {
+    background-image: url("../../img/logo-apple.svg");
+    width: 47px;
+    height: 56px;
+  }
+
+  &--playmarket {
+    background-image: url("../../img/logo-android.svg");
+    width: 43px;
+    height: 47px;
+  }
+
+  &--msstore {
+    background-image: url("../../img/logo-microsoft.svg");
+    width: 44px;
+    height: 41px;
+  }
+}

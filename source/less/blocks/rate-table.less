@@ -1,0 +1,80 @@
+.rate-table__row {
+  border: 2px solid #e5e5e5;
+
+  &:nth-child(2) {
+    border-top: none;
+  }
+}
+
+.rate-table__hcell {
+  padding: 19px 0;
+  color: @clr-white;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: @clr-dblue;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  border-top: none;
+  border-bottom: none;
+
+  &--hit {
+    position: relative;
+    background-image: url("../../img/bg-hit-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--hit::before {
+    content: "хит";
+    position: absolute;
+    font-size: 14px;
+    line-height: 30px;
+    color: @clr-white;
+    font-weight: normal;
+    left: 5px;
+    top: 7px;
+    transform: rotate(-45deg);
+  }
+
+  &:nth-child(1) {
+    display: none;
+  }
+}
+
+.rate-table__cell {
+  padding: 16px 22px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: @clr-dblue;
+  text-transform: uppercase;
+  border: 2px solid #e5e5e5;
+
+  &--notopborder {
+    border-top: none;
+  }
+
+  &--available {
+    background-image: url("../../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 11%;
+  }
+
+  &--disable {
+    background-image: url("../../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+  }
+
+  &:nth-child(1) {
+    display: none;
+  }
+}
+
+.rate-table__rate-value {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+}

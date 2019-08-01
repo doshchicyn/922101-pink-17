@@ -1,0 +1,62 @@
+.comment_box,
+.comment_box__image {
+  background-color: @clr-grey;
+}
+
+.comment_box__name {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 14px;
+  line-height: 24px;
+  color: @clr-dblue;
+  font-weight: bold;
+}
+
+.comment_box__time-ago {
+  font-size: 12px;
+  line-height: 24px;
+  color: @clr-dblue;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.comment_box__text {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 24px;
+  color: @clr-dblue;
+  font-weight: normal;
+  word-wrap: break-word;
+}
+
+.comment_box__like {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.comment_box__like-btn {
+  position: relative;
+  padding: 0;
+  padding-left: 32px;
+  font-size: 12px;
+  line-height: 23px;
+  color: @clr-red;
+  font-weight: normal;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 13px;
+    height: 12px;
+    background-image: url("../../img/icon-heart.svg");
+  }
+}
