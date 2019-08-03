@@ -14,7 +14,9 @@
     display: block;
     width: 6px;
     height: 6px;
-    background-color: rgba(40, 54, 69, 0.3);
+    // background-color: rgba(40, 54, 69, 0.3);
+    background-color: @clr-dblue;
+    opacity: 0.3;
     border-radius: 50%;
   }
 
@@ -26,5 +28,26 @@
     background-color: @clr-white;
     border-radius: 50%;
     border: 3px solid @clr-dblue;
+    opacity: 1;
+  }
+
+  &:hover::before {
+    background-color: @clr-dblue;
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    background-color: @clr-dblue;
+    opacity: 0.1;
+  }
+
+  &--current:hover::before {
+    background-color: @clr-white;
+    opacity: 1;
+  }
+
+  &--current:active::before {
+    background-color: @clr-white;
+    opacity: 1;
   }
 }
