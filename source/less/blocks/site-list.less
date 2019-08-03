@@ -1,9 +1,10 @@
 .site-list__item {
   text-align: center;
-  padding: 22px 0;
 }
 
 .site-list__link {
+  display: block;
+  padding: 22px 0;
   text-decoration: none;
   color: @clr-white;
   font-size: 18px;
@@ -11,10 +12,11 @@
   font-weight: bold;
 
   &[href]:hover {
-    color: rgba(210, 40, 86, 1);
+    color: @clr-red;
   }
 
   &[href]:active {
-    color: rgba(210, 40, 86, 0.3);
+    color: @clr-red;
+    opacity: 0.3;
   }
 }
