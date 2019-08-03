@@ -1,10 +1,16 @@
 .content {
   position: relative;
-  background-image: url("../../img/bg-content-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center 100%;
-}
+  background-color: @clr-grey;
+  padding-top: 122px;
 
-.content__features-box {
-  padding-top: 46px;
+  &::before {
+    content: "";
+    position: absolute;
+    margin-left: -600px;
+    top: 0;
+    left: 50%;
+    width: 1200px;
+    height: 94px;
+    background-image: url("../../img/bg-triangle-white.svg");
+  }
 }
