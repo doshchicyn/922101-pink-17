@@ -20,3 +20,32 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    width: 170px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__link {
+    display: inline-block;
+    padding: 10px 0;
+    text-transform: capitalize;
+    line-height: 18px;
+    font-weight: normal;
+
+    &--active {
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      border-bottom-color: @clr-white;
+    }
+  }
+}

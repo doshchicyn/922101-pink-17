@@ -42,16 +42,31 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-// // планшетная версия
-// @media (min-width: @tablet-width) {
-//   body {
-//     background-color: green;
-//   }
-// }
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
 
-// // декстопная версия
-// @media (min-width: @desktop-width) {
-//   body {
-//     background-color: yellow;
-//   }
-// }
+// планшетная версия
+@media (min-width: @tablet-width) {
+  body {
+    background-color: green;
+  }
+
+  .container {
+    width: @tablet-width;
+  }
+}
+
+// декстопная версия
+@media (min-width: @desktop-width) {
+  body {
+    background-color: yellow;
+  }
+
+  .container {
+    width: @desktop-width;
+  }
+}

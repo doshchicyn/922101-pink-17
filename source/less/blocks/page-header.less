@@ -11,23 +11,15 @@
   z-index: 20;
 }
 
-.container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-}
-
 .page-header__menu-list {
   .drop-list();
 }
 
-// @media (min-width: @tablet-width) {
-//   .page-header {
-//     width: 660px;
-//   }
-
-//   .container {
-//     width: 660px;
-//   }
-// }
+@media (min-width: @desktop-width) {
+  .page-header__nav {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+}
