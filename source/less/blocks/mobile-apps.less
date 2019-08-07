@@ -1,19 +1,18 @@
 .mobile-apps {
-  margin: 0 auto;
-  display: flex;
   position: relative;
-  flex-direction: column;
-  background-color: #2b3848;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-color: #1d2631;
 }
 
 .mobile-apps__image {
   position: relative;
-  width: 320px;
-  margin: 0 auto;
+  right: 20px;
+  min-width: 320px;
   height: 462px;
+  margin: 0;
+  margin-bottom: 28px;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .mobile-apps__front-image {
@@ -28,16 +27,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   position: relative;
-  background-color: #1d2631;
-  padding-top: 28px;
+  // padding-top: 28px;
 }
 
 .mobile-apps__text {
   position: absolute;
   width: 230px;
-  top: -370px;
+  top: -400px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -87,4 +84,82 @@
   text-align: center;
   color: @clr-white;
   font-weight: lighter;
+}
+
+@media (min-width: @tablet-width) {
+  .mobile-apps {
+    display: block;
+    height: 729px;
+    padding-top: 210px;
+    padding-bottom: 110px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .mobile-apps__image {
+    position: absolute;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+    background-image: none;
+  }
+
+  .mobile-apps__column {
+    display: block;
+    width: 300px;
+  }
+
+  .mobile-apps__text {
+    position: static;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: lighter;
+    margin-bottom: 36px;
+  }
+
+  .mobile-apps__link {
+    margin-bottom: 27px;
+  }
+
+  .mobile-apps__list {
+    margin: 0 auto;
+    margin-bottom: 17px;
+  }
+
+  .mobile-apps__description {
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: lighter;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mobile-apps {
+    height: 853px;
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+  }
+
+  .mobile-apps__text {
+    font-size: 50px;
+    line-height: 56px;
+    font-weight: lighter;
+    margin-bottom: 60px;
+  }
+
+  .mobile-apps__link {
+    margin-bottom: 48px;
+  }
+
+  .mobile-apps__list {
+    margin-bottom: 42px;
+  }
+
+  .mobile-apps__description {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: lighter;
+  }
 }
