@@ -9,7 +9,6 @@
   min-width: 320px;
   height: 462px;
   margin: 0;
-  margin-bottom: 28px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -25,10 +24,10 @@
 
 .mobile-apps__column {
   display: flex;
+  padding-top: 28px;
   flex-direction: column;
   align-items: center;
   position: relative;
-  // padding-top: 28px;
 }
 
 .mobile-apps__text {
@@ -88,10 +87,9 @@
 
 @media (min-width: @tablet-width) {
   .mobile-apps {
-    display: block;
+    display: flex;
     height: 729px;
     padding-top: 210px;
-    padding-bottom: 110px;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-position: center top;
     background-repeat: no-repeat;
@@ -99,15 +97,25 @@
 
   .mobile-apps__image {
     position: absolute;
-    margin: 0;
-    right: 0;
+    display: flex;
+    min-width: auto;
+    height: 100%;
     bottom: 0;
+    justify-content: center;
+    align-items: flex-end;
     background-image: none;
+  }
+
+  .mobile-apps__front-image {
+    position: static;
+    width: 700px;
+    height: 545px;
   }
 
   .mobile-apps__column {
     display: block;
     width: 300px;
+    padding-top: 0;
   }
 
   .mobile-apps__text {
