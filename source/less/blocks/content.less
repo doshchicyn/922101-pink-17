@@ -14,3 +14,70 @@
     background-image: url("../../img/bg-triangle-white.svg");
   }
 }
+
+.content__features {
+  .drop-list();
+  margin-bottom: 40px;
+}
+
+.content__image {
+  display: block;
+  position: relative;
+  bottom: 0;
+  margin: 0;
+  text-align: center;
+  height: 277px;
+  overflow: hidden;
+}
+
+.content__phone-image {
+  width: 157px;
+  height: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .content {
+    padding-top: 27px;
+  }
+
+  .content__box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .content__features {
+    flex-basis: 310px;
+    padding-top: 73px;
+    margin-bottom: 0;
+  }
+
+  .content__image {
+    flex-basis: 268px;
+    height: 481px;
+  }
+
+  .content__phone-image {
+    width: 268px;
+    height: 481px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content {
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
+
+  .content__box {
+    display: block;
+  }
+
+  .content__features {
+    padding-top: 0;
+  }
+
+  .content__image {
+    display: none;
+  }
+}
