@@ -19,7 +19,6 @@
 .prices__table {
   position: relative;
   border-collapse: collapse;
-  border: 2px solid #e5e5e5;
   border-top: none;
   background-color: @clr-white;
   width: 300%;
@@ -32,4 +31,28 @@
   padding: 0 20px;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .prices {
+    padding-top: 109px;
+    padding-bottom: 68px;
+  }
+
+  .prices__table {
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .prices__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .prices {
+    padding-top: 157px;
+    padding-bottom: 95px;
+  }
 }
