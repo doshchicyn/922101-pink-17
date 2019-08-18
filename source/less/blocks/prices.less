@@ -1,19 +1,11 @@
 .prices {
   position: relative;
   background-color: @clr-grey;
-  padding-top: 133px;
   padding-bottom: 47px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    margin-left: -600px;
-    top: 0;
-    left: 50%;
-    width: 1200px;
-    height: 94px;
-    background-image: url("../../img/bg-triangle-white.svg");
-  }
+.prices > .container {
+  overflow-x: hidden;
 }
 
 .prices__table {
@@ -35,8 +27,11 @@
 
 @media (min-width: @tablet-width) {
   .prices {
-    padding-top: 109px;
     padding-bottom: 68px;
+  }
+
+  .prices > .container {
+    overflow-x: visible;
   }
 
   .prices__table {
@@ -52,7 +47,6 @@
 
 @media (min-width: @desktop-width) {
   .prices {
-    padding-top: 157px;
     padding-bottom: 95px;
   }
 }

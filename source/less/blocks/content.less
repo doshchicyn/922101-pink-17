@@ -1,18 +1,8 @@
 .content {
   position: relative;
   background-color: @clr-grey;
-  padding-top: 122px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    margin-left: -600px;
-    top: 0;
-    left: 50%;
-    width: 1200px;
-    height: 94px;
-    background-image: url("../../img/bg-triangle-white.svg");
-  }
+  padding-top: 113px;
+  background-image: linear-gradient(176deg, #fff 8%, #f2f2f2 8%, #f2f2f2 92%);
 }
 
 .content__features {
@@ -37,7 +27,8 @@
 
 @media (min-width: @tablet-width) {
   .content {
-    padding-top: 27px;
+    padding-top: 47px;
+    background-image: linear-gradient(176deg, #fff 16%, #f2f2f2 16%, #f2f2f2 84%);
   }
 
   .content__box {
@@ -65,8 +56,8 @@
 
 @media (min-width: @desktop-width) {
   .content {
-    padding-top: 0;
-    padding-bottom: 64px;
+    padding-top: 72px;
+    background-image: linear-gradient(176deg, #fff 23%, #f2f2f2 23%, #f2f2f2 77%);
   }
 
   .content__box {
