@@ -1,6 +1,18 @@
 .mobile-apps {
   position: relative;
   background-color: #1d2631;
+  padding-top: 176px;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.mobile-apps > .container {
+  min-height: 557px;
+  padding-top: 286px;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .mobile-apps__image {
@@ -47,7 +59,7 @@
   display: block;
   width: 100%;
   padding: 15px 0;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
@@ -70,7 +82,7 @@
 
 .mobile-apps__list {
   .drop-list();
-  margin-bottom: 23px;
+  margin-bottom: 15px;
 }
 
 .mobile-apps__description {
@@ -88,11 +100,18 @@
 @media (min-width: @tablet-width) {
   .mobile-apps {
     display: flex;
-    min-height: 729px;
-    padding-top: 210px;
+    padding-top: 184px;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-position: center top;
     background-repeat: no-repeat;
+  }
+
+  .mobile-apps > .container {
+    padding-top: 0;
+    min-height: 545px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
   }
 
   .mobile-apps__image {
@@ -114,7 +133,7 @@
   .mobile-apps__column {
     display: block;
     width: 300px;
-    padding-top: 0;
+    padding-top: 25px;
   }
 
   .mobile-apps__text {
@@ -147,8 +166,19 @@
 @media (min-width: @desktop-width) {
   .mobile-apps {
     height: 853px;
-    padding-top: 228px;
+    padding-top: 209px;
     background-image: url("../../img/bg-back-desktop@1x.jpg");
+  }
+
+  .mobile-apps > .container {
+    min-height: 644px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: -29% 100%;
+  }
+
+  .mobile-apps__column {
+    padding-top: 15px;
   }
 
   .mobile-apps__image {
@@ -170,7 +200,7 @@
   }
 
   .mobile-apps__link {
-    margin-bottom: 48px;
+    margin-bottom: 59px;
   }
 
   .mobile-apps__list {
