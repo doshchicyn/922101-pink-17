@@ -47,22 +47,30 @@
     </header>
 
     <main>
-      <section class="content-desc">
-        <h2 class="visually-hidden">Описание к фотогалереи</h2>
+      <section class="content-title">
+        <h2 class="visually-hidden">Название страницы - фотографии пользователей</h2>
         <div class="container">
-          <p class="content-desc__text">Фотографии пользователей</p>
+          <p class="content-title__text">Фотографии пользователей</p>
+        </div>
+      </section>
+
+      <section class="content-desc">
+        <h2 class="visually-hidden">Описание фотогалереи</h2>
+        <div class="container">
+          <p class="content-desc__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
       </section>
 
       <section class="content-panorama">
         <h2 class="visually-hidden">Панорамное фото дня</h2>
-        <div class="content-panorama__box container">
-          <p class="content-panorama__text ">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
-        </div>
-        <figure class="content-panorama__image">
-          <img class="content-panorama__picture" src="./img/panorama-mobile@1x.jpg" width="320" height="137">
-          <p class="content-panorama__best-mark" href="#">Панорама дня</a>
-        </figure>
+        <picture class="content-panorama__image">
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+          <img class="content-panorama__picture" src="./img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото панорама дня">
+          <div class="container">
+            <p class="content-panorama__mark">Панорама дня</a>
+          </div>
+        </picture>
         <div class="container">
           <div class="content-panorama__comment_box comment_box">
             <p class="comment_box__name">Анна<span class="comment_box__time-ago"> (5 минут назад)</span></p>
