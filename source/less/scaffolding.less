@@ -1,8 +1,9 @@
+@import "./normalize.less";
 @import "./fonts.less";
 
 body {
   font-family: "Open Sans", "Arial", sans-serif;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
   background-color: @bg-color;
@@ -40,16 +41,28 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-// // планшетная версия
-// @media (min-width: @tablet-width) {
-//   body {
-//     background-color: green;
-//   }
-// }
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
 
-// // декстопная версия
-// @media (min-width: @desktop-width) {
-//   body {
-//     background-color: yellow;
-//   }
-// }
+// планшетная версия
+@media (min-width: @tablet-width) {
+  body {
+    position: relative;
+  }
+
+  .container {
+    width: @tablet-width;
+  }
+}
+
+// декстопная версия
+@media (min-width: @desktop-width) {
+  .container {
+    width: @desktop-width;
+    padding: 0 10px;
+  }
+}

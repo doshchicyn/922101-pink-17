@@ -1,16 +1,16 @@
 .prices {
   position: relative;
-  background-image: url("../../img/bg-prices-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center 100%;
-  padding-top: 130px;
+  background-color: @clr-grey;
   padding-bottom: 47px;
+}
+
+.prices > .container {
+  overflow-x: hidden;
 }
 
 .prices__table {
   position: relative;
   border-collapse: collapse;
-  border: 2px solid #e5e5e5;
   border-top: none;
   background-color: @clr-white;
   width: 300%;
@@ -23,4 +23,30 @@
   padding: 0 20px;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .prices {
+    padding-bottom: 68px;
+  }
+
+  .prices > .container {
+    overflow-x: visible;
+  }
+
+  .prices__table {
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .prices__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .prices {
+    padding-bottom: 95px;
+  }
 }
