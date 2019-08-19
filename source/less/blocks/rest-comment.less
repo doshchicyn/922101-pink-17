@@ -1,7 +1,3 @@
-.rest-comment__box {
-  background-color: @clr-grey;
-}
-
 .rest-comment__name {
   margin: 0;
   font-size: 14px;
@@ -57,4 +53,15 @@
     height: 12px;
     background-image: url("../../img/icon-heart.svg");
   }
+}
+
+@media (min-width: @tablet-width) {
+  .rest-comment__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .rest-comment__like {
+  //   align-self: flex-start;
+  // }
 }
