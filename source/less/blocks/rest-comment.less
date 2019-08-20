@@ -26,8 +26,6 @@
 
 .rest-comment__like {
   margin: 0;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .rest-comment__like-btn {
@@ -59,9 +57,25 @@
   .rest-comment__box {
     display: flex;
     flex-direction: column;
+    min-height: 160px;
   }
 
-  // .rest-comment__like {
-  //   align-self: flex-start;
-  // }
+  .rest-comment__text {
+    margin-bottom: 13px;
+    flex-grow: 1;
+  }
+
+  .rest-comment__like {
+    position: relative;
+  }
+
+  .rest-comment__like-btn {
+    position: static;
+    padding-left: 0;
+
+    &::before {
+      left: auto;
+      right: 0;
+    }
+  }
 }
