@@ -5,27 +5,30 @@
   background-color: #f2f2f2;
 }
 
-.upload-form__image {
-  margin: 0;
+.content-editor__picture {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: auto;
   margin-bottom: 42px;
 }
 
-.upload-form__picture {
-  width: 100%;
-  height: auto;
-}
-
 .upload-form__wrap {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  &:first-child {
+  &:nth-child(1) {
     border-bottom: 1px solid #dddfe0;
   }
 
   &:nth-child(2) {
+    width: 320px;
+    padding: 0 20px;
     padding-top: 38px;
+    margin: 0 auto;
   }
 }
 
