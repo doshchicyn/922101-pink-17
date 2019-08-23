@@ -5,85 +5,62 @@
   background-color: #f2f2f2;
 }
 
-.upload-form__image {
-  margin: 0;
+.content-editor > .container {
+  width: auto;
+  padding: 0;
+}
+
+.content-editor__picture {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: auto;
   margin-bottom: 42px;
 }
 
-.upload-form__picture {
-  width: 100%;
-  height: auto;
-}
-
-.upload-form__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &:first-child {
-    border-bottom: 1px solid #dddfe0;
+@media (min-width: @tablet-width) {
+  .content-editor {
+    padding-top: 40px;
+    padding-bottom: 54px;
   }
 
-  &:nth-child(2) {
-    padding-top: 38px;
-  }
-}
-
-.upload-form__filters-list {
-  .drop-list();
-  padding-bottom: 28px;
-}
-
-.upload-form__form-btn {
-  display: block;
-  margin: 0;
-  margin-bottom: 12px;
-  width: 100%;
-  padding: 15px 0;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  text-align: center;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 50px;
-  background-color: #f2f2f2;
-
-  &--upload {
-    color: @clr-red;
-    border-color: @clr-red;
+  .content-editor > .container {
+    padding: 0 20px;
+    display: flex;
+    width: @tablet-width;
+    justify-content: space-between;
   }
 
-  &--upload:hover {
-    color: @clr-white;
-    background-color: @clr-red;
-  }
-
-  &--upload:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: @clr-red;
-  }
-
-  &--reset {
-    color: @clr-dblue;
-    border-color: @clr-dblue;
-    opacity: 0.1;
-  }
-
-  &--reset:hover {
-    color: @clr-dblue;
-    border-color: @clr-dblue;
-    opacity: 0.3;
-  }
-
-  &--reset:active {
-    color: rgba(255, 255, 255, 0.3);
-    border-color: @clr-dblue;
-    background-color: @clr-dblue;
-    opacity: 0.3;
-  }
-
-  &:last-child {
+  .content-editor__picture {
     margin-bottom: 0;
+    padding: 0;
+    padding-top: 17px;
+    width: 300px;
+  }
+
+  .content-editor__form {
+    flex-basis: 275px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content-editor {
+    width: 940px;
+    padding-top: 57px;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 57px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+  }
+
+  .content-editor > .container {
+    padding: 0;
+    width: auto;
+  }
+
+  .content-editor__form {
+    flex-basis: 410px;
   }
 }

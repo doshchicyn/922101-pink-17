@@ -1,23 +1,34 @@
 .content-photos {
   position: relative;
-  padding-bottom: 40px;
 }
 
 .content-photos__comment-list {
   .drop-list();
-  margin-bottom: 40px;
 }
 
 .content-photos__text {
+  padding-top: 42px;
+  padding-bottom: 41px;
   margin: 0;
   font-size: 14px;
   line-height: 30px;
   color: @clr-dblue;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
   word-wrap: break-word;
 }
 
-.content-editor {
-  background-color: grey;
+@media (min-width: @tablet-width) {
+  .content-photos__text {
+    padding-top: 47px;
+    padding-bottom: 67px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content-photos__text {
+    padding-top: 7px;
+    padding-bottom: 64px;
+  }
 }

@@ -1,49 +1,41 @@
-.comment_box,
-.comment_box__image {
-  background-color: @clr-grey;
-}
-
-.comment_box__name {
+.rest-comment__name {
   margin: 0;
-  margin-bottom: 2px;
   font-size: 14px;
   line-height: 24px;
   color: @clr-dblue;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.comment_box__time-ago {
+.rest-comment__time-ago {
   font-size: 12px;
   line-height: 24px;
   color: @clr-dblue;
   text-transform: uppercase;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
-.comment_box__text {
+.rest-comment__text {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 24px;
   color: @clr-dblue;
-  font-weight: normal;
+  font-weight: 400;
   word-wrap: break-word;
 }
 
-.comment_box__like {
+.rest-comment__like {
   margin: 0;
-  display: inline-block;
-  vertical-align: middle;
 }
 
-.comment_box__like-btn {
+.rest-comment__like-btn {
   position: relative;
   padding: 0;
   padding-left: 32px;
   font-size: 12px;
-  line-height: 23px;
+  line-height: 24px;
   color: @clr-red;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   border: none;
   background-color: transparent;
@@ -58,5 +50,32 @@
     width: 13px;
     height: 12px;
     background-image: url("../../img/icon-heart.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .rest-comment__box {
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+  }
+
+  .rest-comment__text {
+    margin-bottom: 13px;
+    flex-grow: 1;
+  }
+
+  .rest-comment__like {
+    position: relative;
+  }
+
+  .rest-comment__like-btn {
+    position: static;
+    padding-left: 0;
+
+    &::before {
+      left: auto;
+      right: 0;
+    }
   }
 }

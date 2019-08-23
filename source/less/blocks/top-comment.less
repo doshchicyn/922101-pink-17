@@ -1,0 +1,84 @@
+.top-comment__box {
+  background-color: @clr-grey;
+}
+
+.top-comment__name {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: @clr-dblue;
+  font-weight: 700;
+}
+
+.top-comment__time-ago {
+  font-size: 12px;
+  line-height: 24px;
+  color: @clr-dblue;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.top-comment__text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: @clr-dblue;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.top-comment__like {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.top-comment__like-btn {
+  position: relative;
+  padding: 0;
+  padding-left: 32px;
+  font-size: 12px;
+  line-height: 24px;
+  color: @clr-red;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 13px;
+    height: 12px;
+    background-image: url("../../img/icon-heart.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .top-comment__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .top-comment__text {
+    order: 1;
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
+  .top-comment__like-btn {
+    padding-left: 0;
+    padding-right: 30px;
+
+    &::before {
+      left: auto;
+      right: 0;
+    }
+  }
+}
