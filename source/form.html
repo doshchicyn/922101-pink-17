@@ -64,7 +64,7 @@
       <section class="content-form">
         <h2 class="visually-hidden">Форма для отправки Ваших историй с Пинк</h2>
         <div class="container">
-          <form class="content-form__client-form pink-form" action="https://echo.htmlacademy.ru" method="post" name="client-form">
+          <form class="content-form__client-data pink-form" action="https://echo.htmlacademy.ru" method="post" name="client-form">
 
             <fieldset class="pink-form__data-personal data-personal" form="client-form">
               <legend class="pink-form__name visually-hidden">Персональные данные</legend>
@@ -80,6 +80,45 @@
                 <li class="personal-list__item">
                   <label class="personal-list__value" for="personal-list__middle-name">Отчество:</label>
                   <input class="personal-list__field" id="personal-list__middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="pink-form__data-which-app data-which-app" form="client-form">
+              <legend class="pink-form__name visually-hidden">Данные о приложении</legend>
+              <p class="data-which-app__title">С каким приложением путешествовали?</p>
+              <ul class="data-which-app__apps-list app-list">
+                <li class="app-list__item">
+                  <label class="app-list__value">
+                    <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="ios" checked>
+                    <span class="radio-indicator">Pink для iOS</span>
+                  </label>
+                </li>
+                <li class="app-list__item">
+                  <label class="app-list__value">
+                    <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="android">
+                    <span class="radio-indicator">Pink на Android</span>
+                  </label>
+                </li>
+                <li class="app-list__item">
+                  <label class="app-list__value">
+                    <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="windows">
+                    <span class="radio-indicator">Windows Phone</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="pink-form__data-contacts data-contacts" form="client-form">
+              <legend class="pink-form__name visually-hidden">Контактные данные</legend>
+              <ul class="data-contacts__contact-list contact-list">
+                <li class="contact-list__item">
+                  <label class="contact-list__value" for="contact-list__phone">Номер телефона</label>
+                  <input class="contact-list__field" id="contact-list__phone" type="tel" name="phone" title="Номер должен содержать от 7 до 11 цифр и начинаться с 7" value="" pattern="\d{7,11}" placeholder="Номер, пожалуйста">
+                </li>
+                <li class="contact-list__item">
+                  <label class="contact-list__value" for="contact-list__email">Адрес почты</label>
+                  <input class="contact-list__field" id="contact-list__email" type="email" name="email" title="Адрес должен быть указан в формате &quot;mail@domain.ru&quot;" placeholder="Введите почту *" required>
                 </li>
               </ul>
             </fieldset>
@@ -127,55 +166,18 @@
               </ul>
             </fieldset>
 
-            <fieldset class="pink-form__data-contacts data-contacts" form="client-form">
-              <legend class="pink-form__name visually-hidden">Контактные данные</legend>
-              <ul class="data-contacts__contact-list contact-list">
-                <li class="contact-list__item">
-                  <label class="contact-list__value" for="contact-list__phone">Номер телефона</label>
-                  <input class="contact-list__field" id="contact-list__phone" type="tel" name="phone" title="Номер должен содержать от 7 до 11 цифр и начинаться с 7" value="" pattern="\d{7,11}" placeholder="Номер, пожалуйста">
-                </li>
-                <li class="contact-list__item">
-                  <label class="contact-list__value" for="contact-list__email">Адрес почты</label>
-                  <input class="contact-list__field" id="contact-list__email" type="email" name="email" title="Адрес должен быть указан в формате &quot;mail@domain.ru&quot;" placeholder="Введите почту *" required>
-                </li>
-              </ul>
-            </fieldset>
-
-            <fieldset class="pink-form__data-which-app data-which-app" form="client-form">
-              <legend class="pink-form__name visually-hidden">Данные о приложении</legend>
-              <p class="data-which-app__title">С каким приложением путешествовали?</p>
-              <ul class="data-which-app__apps-list app-list">
-                <li class="app-list__item">
-                  <label class="app-list__value">
-                    <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="ios" checked>
-                    <span class="radio-indicator">Pink для iOS</span>
-                  </label>
-                </li>
-                <li class="app-list__item">
-                  <label class="app-list__value">
-                    <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="android">
-                    <span class="radio-indicator">Pink на Android</span>
-                  </label>
-                </li>
-                <li class="app-list__item">
-                  <label class="app-list__value">
-                    <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="windows">
-                    <span class="radio-indicator">Windows Phone</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-
             <fieldset class="pink-form__data-review data-review" form="client-form">
               <legend class="pink-form__name visually-hidden">Напишите отзыв</legend>
               <p class="data-review__title">Опишите свои эмоции</p>
               <textarea class="data-review__text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="8" cols="25"></textarea>
             </fieldset>
 
-            <button class="pink-form__submit-btn" type="submit">Отправить форму</button>
-            <small class="pink-form__required-field pink-form__required-field--bottom">
-                <sup>*</sup> — обязательные поля
-            </small>
+            <div class="pink-form__box-btn">
+              <button class="pink-form__submit-btn" type="submit">Отправить форму</button>
+              <small class="pink-form__required-field">
+                  <sup>*</sup> — обязательные <span class="pink-form__extended-text">для заполнения</span> поля
+              </small>
+            </div>
           </form>
         </div>
       </section>
