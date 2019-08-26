@@ -5,12 +5,19 @@
 
 .content-desc__text {
   margin: 0;
-  padding: 0 15px;
   text-align: center;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: @clr-dblue;
+
+  &--narrow {
+    padding: 0 15px;
+  }
+}
+
+.content-desc__offer {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,8 +28,12 @@
 
   .content-desc__text {
     font-size: 18px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+
+  .content-desc__offer {
+    display: inline;
   }
 }
 
@@ -34,5 +45,10 @@
   .content-desc__text {
     padding-left: 150px;
     padding-right: 150px;
+
+    &--wide {
+      padding-left: 90px;
+      padding-right: 90px;
+    }
   }
 }
