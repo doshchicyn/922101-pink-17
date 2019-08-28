@@ -1,0 +1,84 @@
+.progress-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+  margin-bottom: 43px;
+  min-height: 39px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.progress-list__value {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @clr-dblue;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & .progress-list__checkbox[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -19px;
+    display: block;
+    width: 39px;
+    height: 39px;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    background-color: @clr-white;
+  }
+
+  & .progress-list__checkbox[type="checkbox"]:checked + .checkbox-indicator {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 16px;
+      left: 12px;
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: @clr-red;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 12px;
+      left: 7px;
+      display: block;
+      width: 10px;
+      height: 2px;
+      background-color: @clr-red;
+      transform: rotate(45deg);
+    }
+  }
+
+  & .progress-list__checkbox[type="checkbox"]:hover + .checkbox-indicator,
+  & .progress-list__checkbox[type="checkbox"]:focus + .checkbox-indicator {
+    border-color: @clr-dblue;
+  }
+
+  & .progress-list__checkbox[type="checkbox"]:active + .checkbox-indicator {
+    border-color: @clr-red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .progress-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .progress-list__item {
+    margin: 0;
+    flex-basis: 270px;
+  }
+}

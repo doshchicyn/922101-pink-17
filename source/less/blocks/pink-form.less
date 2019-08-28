@@ -3,15 +3,24 @@
   flex-direction: column;
 }
 
+.pink-form__data-personal {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .pink-form__data-progress {
   order: 1;
+  background-color: @clr-grey;
+  padding: 40px 0 42px 0;
+  margin: 0;
 }
 
 .pink-form__data-contacts {
   order: 2;
 }
 
-.pink-form__data-which-app {
+.pink-form__data-app {
   order: 3;
 }
 
@@ -26,5 +35,31 @@
 @media (min-width: @tablet-width) {
   .pink-form {
     display: block;
+  }
+
+  .pink-form__data-personal {
+    width: @tablet-width;
+  }
+
+  .pink-form__data-progress {
+    width: 620px;
+    padding: 0;
+    padding-left: 58px;
+    padding-bottom: 48px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pink-form__data-personal {
+    width: 470px;
+    padding-left: 10px;
+    padding-right: 35px;
+  }
+
+  .pink-form__data-progress {
+    width: 940px;
+    padding: 52px 58px 55px 58px;
   }
 }
