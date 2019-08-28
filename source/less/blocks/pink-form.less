@@ -7,6 +7,7 @@
   width: 320px;
   padding: 0 20px;
   margin: 0 auto;
+  margin-bottom: 42px;
 }
 
 .pink-form__data-progress {
@@ -18,10 +19,17 @@
 
 .pink-form__data-contacts {
   order: 2;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-top: 33px;
 }
 
 .pink-form__data-app {
   order: 3;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .pink-form__data-review {
@@ -33,15 +41,24 @@
 }
 
 @media (min-width: @tablet-width) {
-  .pink-form {
-    display: block;
+  .pink-form__data-personal {
+    order: 1;
+    width: @tablet-width;
+    margin-bottom: 62px;
   }
 
-  .pink-form__data-personal {
-    width: @tablet-width;
+  .pink-form__data-app {
+    order: 2;
+    width: 620px;
+  }
+
+  .pink-form__data-contacts {
+    order: 3;
+    margin-top: 54px;
   }
 
   .pink-form__data-progress {
+    order: 4;
     width: 620px;
     padding: 0;
     padding-left: 58px;
@@ -49,17 +66,35 @@
     margin: 0 auto;
     background-color: transparent;
   }
+
+  .pink-form__data-review {
+    order: 5;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .pink-form {
+    width: @desktop-width;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .pink-form__data-personal {
-    width: 470px;
-    padding-left: 10px;
-    padding-right: 35px;
+    width: 435px;
+    margin: 0;
+    padding: 0;
+    margin-right: 70px;
+  }
+
+  .pink-form__data-app {
+    width: 435px;
   }
 
   .pink-form__data-progress {
     width: 940px;
-    padding: 52px 58px 55px 58px;
+    padding-bottom: 26px;
   }
 }

@@ -1,12 +1,8 @@
-.data-progress {
-  border: none;
-}
-
-.data-progress__title {
+.data-app__title {
   display: none;
 }
 
-.data-progress__text {
+.data-app__text {
   width: 320px;
   margin: 0 auto;
   margin-bottom: 38px;
@@ -19,7 +15,7 @@
   text-transform: uppercase;
 }
 
-.data-progress__progress-list {
+.data-app__apps-list {
   .drop-list();
   width: 320px;
   padding: 0 20px;
@@ -27,11 +23,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .data-progress {
+  .data-app {
     border: 2px solid #e5e5e5;
   }
 
-  .data-progress__title {
+  .data-app__title {
     display: inline-block;
     vertical-align: middle;
     padding: 0 33px;
@@ -43,23 +39,7 @@
     text-transform: uppercase;
   }
 
-  .data-progress__text {
+  .data-app__text {
     display: none;
-  }
-
-  .data-progress__progress-list {
-    width: auto;
-    padding: 0;
-    margin: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .data-progress {
-    height: 232px;
-  }
-
-  .data-progress__title {
-    margin-bottom: 24px;
   }
 }
