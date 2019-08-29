@@ -1,0 +1,68 @@
+.app-list__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 36px;
+  min-height: 39px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.app-list__value {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @clr-dblue;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & .app-list__radio[type="radio"] + .radio-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 39px;
+    height: 39px;
+    background-color: @clr-white;
+    border: 2px solid @clr-lgrey;
+    border-radius: 50%;
+  }
+
+  & .app-list__radio[type="radio"]:checked + .radio-indicator {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -8px;
+      margin-top: -8px;
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-color: @clr-red;
+      border-radius: 50%;
+    }
+  }
+
+  & .app-list__radio[type="radio"]:hover + .radio-indicator,
+  & .app-list__radio[type="radio"]:focus + .radio-indicator {
+    border-color: @clr-dblue;
+    transition: 0.2s;
+  }
+
+  & .app-list__radio[type="radio"]:active + .radio-indicator {
+    border-color: @clr-red;
+    transition: 0.1s;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .app-list__item {
+    padding-left: 61px;
+  }
+}

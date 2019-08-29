@@ -91,34 +91,39 @@
               <li class="app-list__item">
                 <label class="app-list__value">
                   <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="ios" checked>
-                  <span class="radio-indicator">Pink для iOS</span>
+                  Pink для iOS
+                  <span class="radio-indicator"></span>
                 </label>
               </li>
               <li class="app-list__item">
                 <label class="app-list__value">
                   <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="android">
-                  <span class="radio-indicator">Pink на Android</span>
+                  Pink на Android
+                  <span class="radio-indicator"></span>
                 </label>
               </li>
               <li class="app-list__item">
                 <label class="app-list__value">
                   <input class="app-list__radio visually-hidden" type="radio" name="used-app" value="windows">
-                  <span class="radio-indicator">Windows Phone</span>
+                  Windows Phone
+                  <span class="radio-indicator"></span>
                 </label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="pink-form__data-contacts data-contacts" form="client-form">
-            <legend class="data-contacts__title visually-hidden">Контактные данные</legend>
+            <legend class="data-contacts__title">Контактная информация</legend>
             <ul class="data-contacts__contact-list contact-list">
               <li class="contact-list__item">
                 <label class="contact-list__value" for="contact-list__phone">Номер телефона</label>
                 <input class="contact-list__field" id="contact-list__phone" type="tel" name="phone" title="Номер должен содержать от 7 до 11 цифр и начинаться с 7" value="" pattern="\d{7,11}" placeholder="Номер, пожалуйста">
+                <i class="contact-list__field-icon contact-list__field-icon--phone"></i>
               </li>
               <li class="contact-list__item">
                 <label class="contact-list__value" for="contact-list__email">Адрес почты</label>
                 <input class="contact-list__field" id="contact-list__email" type="email" name="email" title="Адрес должен быть указан в формате &quot;mail@domain.ru&quot;" placeholder="Введите почту *" required>
+                <i class="contact-list__field-icon contact-list__field-icon--email"></i>
               </li>
             </ul>
           </fieldset>
@@ -173,12 +178,12 @@
           </fieldset>
 
           <fieldset class="pink-form__data-review data-review" form="client-form">
-            <legend class="data-review__title visually-hidden">Напишите отзыв</legend>
+            <legend class="data-review__title">Опишите свои эмоции</legend>
             <p class="data-review__text">Опишите свои эмоции</p>
-            <textarea class="data-review__comment" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="8" cols="25"></textarea>
+            <textarea class="data-review__comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
 
-          <div class="pink-form__box-btn">
+          <div class="pink-form__box-btn container">
             <button class="pink-form__submit-btn" type="submit">Отправить форму</button>
             <small class="pink-form__required-field">
                 <sup>*</sup> — обязательные <span class="pink-form__extended-text">для заполнения</span> поля
