@@ -24,32 +24,36 @@
   word-wrap: break-word;
 }
 
-.rest-comment__like {
-  margin: 0;
+.rest-comment__like-box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.rest-comment__like-btn {
-  position: relative;
-  padding: 0;
-  padding-left: 32px;
+.rest-comment__like-text {
+  margin: 0;
   font-size: 12px;
   line-height: 24px;
   color: @clr-red;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.rest-comment__like-btn {
+  font-size: 0;
+  padding: 0;
+  margin-right: 19px;
   border: none;
   background-color: transparent;
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 50%;
-    margin-top: -6px;
-    width: 13px;
-    height: 12px;
-    background-image: url("../../img/icon-heart.svg");
+  &:hover svg path,
+  &:focus svg path {
+    fill: @clr-dblue;
+  }
+
+  &:active svg path {
+    fill-opacity: 0.3;
   }
 }
 
@@ -65,17 +69,12 @@
     flex-grow: 1;
   }
 
-  .rest-comment__like {
-    position: relative;
+  .rest-comment__like-box {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .rest-comment__like-btn {
-    position: static;
-    padding-left: 0;
-
-    &::before {
-      left: auto;
-      right: 0;
-    }
+    margin-right: 0;
   }
 }

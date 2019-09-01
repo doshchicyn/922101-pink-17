@@ -20,8 +20,10 @@
   &:hover {
     cursor: pointer;
   }
+}
 
-  & .app-list__radio[type="radio"] + .radio-indicator {
+.app-list__radio[type="radio"] {
+  & + .radio-indicator {
     position: absolute;
     top: 0;
     left: 0;
@@ -33,7 +35,7 @@
     border-radius: 50%;
   }
 
-  & .app-list__radio[type="radio"]:checked + .radio-indicator {
+  &:checked + .radio-indicator {
     &::before {
       content: "";
       position: absolute;
@@ -49,13 +51,13 @@
     }
   }
 
-  & .app-list__radio[type="radio"]:hover + .radio-indicator,
-  & .app-list__radio[type="radio"]:focus + .radio-indicator {
+  &:hover + .radio-indicator,
+  &:focus + .radio-indicator {
     border-color: @clr-dblue;
     transition: 0.2s;
   }
 
-  & .app-list__radio[type="radio"]:active + .radio-indicator {
+  &:active + .radio-indicator {
     border-color: @clr-red;
     transition: 0.1s;
   }
