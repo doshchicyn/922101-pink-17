@@ -1,13 +1,13 @@
-var navMain = document.querySelector('.main-menu');
+var navMain = document.querySelector('.page-header__nav');
 var navToggle = document.querySelector('.main-menu__toggle-btn');
 
-navMain.classList.remove('main-menu--nojs');
+navMain.classList.remove('page-header__nav--nojs');
 navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-menu--closed')) {
-    navMain.classList.remove('main-menu--closed');
-    navMain.classList.add('main-menu--opened');
+  if (navMain.classList.contains('page-header__nav--closed')) {
+    navMain.classList.remove('page-header__nav--closed');
+    navMain.classList.add('page-header__nav--opened');
   } else {
-    navMain.classList.add('main-menu--closed');
-    navMain.classList.remove('main-menu--opened');
+    navMain.classList.add('page-header__nav--closed');
+    navMain.classList.remove('page-header__nav--opened');
   }
 });

@@ -1,0 +1,122 @@
+.progress-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+  margin-bottom: 43px;
+  min-height: 39px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.progress-list__value {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @clr-dblue;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.progress-list__checkbox[type="checkbox"] {
+  & + .checkbox-indicator {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -19px;
+    display: block;
+    width: 39px;
+    height: 39px;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    background-color: @clr-white;
+  }
+
+  &:checked + .checkbox-indicator {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 16px;
+      left: 12px;
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: @clr-red;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 12px;
+      left: 7px;
+      display: block;
+      width: 10px;
+      height: 2px;
+      background-color: @clr-red;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:hover + .checkbox-indicator,
+  &:focus + .checkbox-indicator {
+    border-color: @clr-dblue;
+    transition: 0.2s;
+  }
+
+  &:active + .checkbox-indicator {
+    border-color: @clr-red;
+    transition: 0.1s;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .progress-list__item {
+    padding-left: 61px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .progress-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: -21px -25px;
+  }
+
+  .progress-list__item {
+    padding-left: 60px;
+    margin: 21px 24px;
+    width: 260px;
+
+    &:nth-child(3) {
+      order: 1;
+    }
+
+    &:nth-child(5) {
+      order: 2;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(4) {
+      order: 4;
+    }
+
+    &:nth-child(6) {
+      order: 5;
+    }
+
+    &:last-child {
+      margin-bottom: 21px;
+    }
+  }
+}

@@ -1,6 +1,9 @@
 .page-footer {
   position: relative;
-  padding: 40px 0;
+  padding-top: 57px;
+  padding-right: 0;
+  padding-bottom: 40px;
+  padding-left: 0;
 
   &--hidden {
     display: none;
@@ -18,23 +21,23 @@
   font-size: 0;
   text-decoration: none;
   margin-bottom: 40px;
-}
 
-.page-footer__logo-image {
-  width: 147px;
-  height: 40px;
-
-  &:hover path,
-  &:focus path {
-    fill: #d22856;
+  & svg {
+    width: 147px;
+    height: 40px;
   }
 
-  &:active > path {
+  &:hover svg path,
+  &:focus svg path {
+    fill: @clr-red;
+  }
+
+  &:active svg > path {
     fill-opacity: 0.3;
   }
 
-  &:active > g path {
-    fill: #283645;
+  &:active svg > g path {
+    fill: @clr-dblue;
     fill-opacity: 0.3;
   }
 }
@@ -59,11 +62,12 @@
   height: 34px;
   margin-left: 15px;
 
-  &:hover path {
+  &:hover svg path,
+  &:focus svg path {
     fill: #283645;
   }
 
-  &:active path {
+  &:active svg path {
     fill: #283645;
     fill-opacity: 0.3;
   }
@@ -71,7 +75,7 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    padding: 36px 0 25px 0;
+    padding: 86px 0 25px 0;
     background-color: @clr-white;
 
     &--hidden {

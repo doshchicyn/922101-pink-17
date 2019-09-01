@@ -14,30 +14,32 @@
 .filter-set__icon {
   font-size: 0;
 
-  &:hover {
-    cursor: pointer;
-  }
-
-  & > .filter-set__image {
+  & svg {
     opacity: 0.3;
   }
 
-  &:hover > .filter-set__image {
+  &:hover svg,
+  &:focus svg {
+    cursor: pointer;
     opacity: 0.5;
   }
 
-  &--active + .filter-set__bar {
-    display: block;
-  }
-
-  &--active > .filter-set__image {
+  &--active svg,
+  &--active:hover svg,
+  &--active:focus svg,
+  &--active:active svg {
     opacity: 1;
     fill: @clr-red;
+    cursor: auto;
   }
 
-  &--active:hover > .filter-set__image {
-    opacity: 1;
+  &--active ~ .filter-set__bar {
+    display: block;
   }
+}
+
+.filter-set__range {
+  display: none;
 }
 
 .filter-set__bar {
@@ -59,7 +61,6 @@
     content: "";
     position: absolute;
     display: block;
-    right: 0;
     top: 50%;
     margin-top: -7px;
     width: 14px;
@@ -76,6 +77,10 @@
   &:active::after,
   &:focus::after {
     background-color: @clr-red;
+  }
+
+  &--crop {
+    left: 80%;
   }
 }
 
@@ -100,9 +105,9 @@
     width: 23px;
     height: auto;
 
-    & > .filter-set__image,
-    &:hover > .filter-set__image,
-    &:active > .filter-set__image {
+    & svg,
+    &:hover svg,
+    &:active svg {
       fill: @clr-red;
       opacity: 1;
       cursor: auto;
@@ -114,6 +119,20 @@
     display: block;
     width: 202px;
     bottom: auto;
+  }
+
+  .filter-set__level {
+    &--crop {
+      left: 72%;
+    }
+
+    &--fill {
+      left: 12%;
+    }
+
+    &--contrast {
+      left: 47%;
+    }
   }
 }
 
@@ -136,16 +155,15 @@
     position: relative;
 
     &--crop {
-      width: 25%;
-      max-width: 25%;
+      left: 25%;
     }
 
     &--fill {
-      max-width: 75%;
+      left: 86%;
     }
 
     &--contrast {
-      width: 62%;
+      left: 55%;
     }
   }
 }

@@ -1,0 +1,62 @@
+.data-progress {
+  border: none;
+}
+
+.data-progress__title {
+  display: none;
+}
+
+.data-progress__text {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  padding: 0 35px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @clr-red;
+  text-transform: uppercase;
+}
+
+.data-progress__progress-list {
+  .drop-list();
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .data-progress {
+    border: 2px solid #e5e5e5;
+  }
+
+  .data-progress__title {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 33px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @clr-red;
+    text-transform: uppercase;
+  }
+
+  .data-progress__text {
+    display: none;
+  }
+
+  .data-progress__progress-list {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .data-progress {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
