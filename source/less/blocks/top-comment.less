@@ -50,6 +50,15 @@
   margin-right: 19px;
   border: none;
   background-color: transparent;
+
+  &:hover svg path,
+  &:focus svg path {
+    fill: @clr-dblue;
+  }
+
+  &:active svg path {
+    fill-opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
