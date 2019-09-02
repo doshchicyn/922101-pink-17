@@ -27,7 +27,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 39px;
     height: 39px;
     background-color: @clr-white;
@@ -38,11 +40,7 @@
   &:checked + .radio-indicator {
     &::before {
       content: "";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      margin-left: -8px;
-      margin-top: -8px;
+      position: relative;
       display: block;
       width: 15px;
       height: 15px;
