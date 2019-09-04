@@ -52,35 +52,29 @@
   background-color: @clr-dblue;
 }
 
-.filter-set__level {
-  position: relative;
-  height: 2px;
-  outline: none;
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 50%;
-    margin-top: -7px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    border: 2px solid @clr-red;
-    background-color: @clr-white;
-  }
-
-  &:hover::after {
-    cursor: pointer;
-  }
-
-  &:active::after,
-  &:focus::after {
-    background-color: @clr-red;
-  }
+.filter-set__marker {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  margin-top: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid @clr-red;
+  background-color: @clr-white;
 
   &--crop {
     left: 80%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @clr-red;
   }
 }
 
@@ -121,7 +115,7 @@
     bottom: auto;
   }
 
-  .filter-set__level {
+  .filter-set__marker {
     &--crop {
       left: 72%;
     }
@@ -151,7 +145,7 @@
     width: 288px;
   }
 
-  .filter-set__level {
+  .filter-set__marker {
     position: relative;
 
     &--crop {

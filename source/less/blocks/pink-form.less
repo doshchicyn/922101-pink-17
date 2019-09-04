@@ -51,21 +51,24 @@
   align-items: center;
 }
 
-.pink-form__submit-btn {
+.btn {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  margin-bottom: 36px;
   padding-top: 19px;
   padding-bottom: 19px;
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: #2aab6d;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: @clr-white;
   text-transform: uppercase;
+
+  &.pink-form__submit-btn {
+    margin-bottom: 36px;
+  }
 
   &:hover,
   &:focus {
@@ -109,6 +112,8 @@
     margin: 0 auto;
     margin-bottom: 53px;
     padding-left: 58px;
+    padding-right: 58px;
+    padding-bottom: 54px;
     width: 620px;
     background-color: @clr-white;
   }
@@ -130,6 +135,7 @@
     padding: 0;
     padding-top: 40px;
     padding-left: 58px;
+    padding-right: 58px;
     padding-bottom: 48px;
     margin: 0 auto;
     margin-bottom: 53px;
@@ -179,12 +185,12 @@
 
   .pink-form__data-app {
     width: 435px;
-    padding: 0;
-    padding-top: 42px;
-    padding-left: 74px;
-    padding-bottom: 55px;
     margin: 0;
     margin-bottom: 0;
+    padding-top: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 55px;
   }
 
   .pink-form__data-contacts {
@@ -197,6 +203,9 @@
 
   .pink-form__data-progress {
     width: 940px;
+    padding-top: 40px;
+    padding-left: 58px;
+    padding-right: 58px;
     padding-bottom: 26px;
   }
 
