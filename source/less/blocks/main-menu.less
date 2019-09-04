@@ -28,8 +28,10 @@
   }
 }
 
-.main-menu__logo--adaptive {
-  display: none;
+.main-menu__logo-image {
+  &--adaptive {
+    display: none;
+  }
 }
 
 .main-menu__toggle-btn {
@@ -172,14 +174,16 @@
     padding-bottom: 43px;
   }
 
-  .main-menu__logo--mobile {
-    display: none;
-  }
+  .main-menu__logo-image {
+    &--mobile {
+      display: none;
+    }
 
-  .main-menu__logo--adaptive {
-    display: block;
-    width: 147px;
-    height: 40px;
+    &--adaptive {
+      display: block;
+      width: 147px;
+      height: 40px;
+    }
   }
 
   .main-menu__toggle-btn {
