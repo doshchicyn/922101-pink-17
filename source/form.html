@@ -250,7 +250,7 @@
           </fieldset>
 
           <div class="pink-form__box-btn container">
-            <button class="pink-form__submit-btn" type="submit">Отправить форму</button>
+            <button class="pink-form__submit-btn btn" type="submit">Отправить форму</button>
             <small class="pink-form__required-field">
                 <sup>*</sup> — обязательные <span class="pink-form__extended-text">для заполнения</span> поля
             </small>
@@ -312,12 +312,12 @@
 
     <section class="modal modal--error">
       <h2 class="visually-hidden">Всплывающее окно - форма заполнена с ошибками</h2>
-      <div class="modal__wrap modal__wrap--white">
+      <div class="modal__wrap modal__wrap--white modal__wrap--no-indent">
         <p class="modal__title">Что-то пошло не так!</p>
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div>
-      <div class="modal__wrap modal__wrap--white modal__wrap--grey">
-        <button class="modal__btn">Ok</button>
+      <div class="modal__wrap modal__wrap--white">
+        <button class="modal__btn btn" type="button">Ok</button>
       </div>
     </section>
 
@@ -327,8 +327,8 @@
         <p class="modal__title">Ваша заявка отправлена</p>
         <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       </div>
-      <div class="modal__wrap modal__wrap--white modal__wrap--grey">
-        <button class="modal__btn">Закрыть окно</button>
+      <div class="modal__wrap modal__wrap--grey">
+        <button class="modal__btn btn" type="button">Закрыть окно</button>
       </div>
     </section>
     <script src="./js/menu.js"></script>

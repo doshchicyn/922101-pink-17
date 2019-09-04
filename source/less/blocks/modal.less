@@ -1,3 +1,43 @@
 .modal {
-  display: none;
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal__wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &--white {
+    padding: 42px 20px 33px 20px;
+    background-color: @clr-white;
+  }
+
+  &--grey {
+    padding: 48px 20px 52px 20px;
+    background-color: @clr-lgrey;
+  }
+
+  &--no-indent {
+    padding-bottom: 0;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @clr-black;
+}
+
+.modal__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: @clr-dblue;
+  text-align: center;
 }

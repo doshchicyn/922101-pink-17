@@ -51,21 +51,24 @@
   align-items: center;
 }
 
-.pink-form__submit-btn {
+.btn {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  margin-bottom: 36px;
   padding-top: 19px;
   padding-bottom: 19px;
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: #2aab6d;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: @clr-white;
   text-transform: uppercase;
+
+  &.pink-form__submit-btn {
+    margin-bottom: 36px;
+  }
 
   &:hover,
   &:focus {
