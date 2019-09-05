@@ -20,9 +20,10 @@
 
 .top-comment__text {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 24px;
+  letter-spacing: 0.4px;
   color: @clr-dblue;
   font-weight: 400;
   word-wrap: break-word;
@@ -47,7 +48,7 @@
 .top-comment__like-btn {
   font-size: 0;
   padding: 0;
-  margin-right: 19px;
+  margin-right: 17px;
   border: none;
   background-color: transparent;
 
@@ -59,6 +60,11 @@
   &:active svg path {
     fill-opacity: 0.3;
   }
+}
+
+.top-comment__like-btn svg {
+  width: 14px;
+  height: 13px;
 }
 
 @media (min-width: @tablet-width) {

@@ -8,7 +8,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 19px;
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contact-list__value {
@@ -44,11 +48,13 @@
 }
 
 .contact-list__field {
-  padding: 17px 20px;
+  width: 100%;
+  padding: 12px 20px;
   border: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
+  letter-spacing: 0.4px;
   color: @clr-dblue;
 
   &:focus {
