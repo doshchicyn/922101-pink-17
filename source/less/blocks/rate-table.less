@@ -165,8 +165,19 @@
 @media (min-width: @desktop-width) {
   .rate-table__hcell {
     font-size: 18px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+
+    &--hit::before {
+      left: 11px;
+      top: 11px;
+
+    }
+
+    &--hit::after {
+      top: 10px;
+      left: -88px;
+    }
   }
 
   .rate-table__rate-value {
@@ -176,6 +187,6 @@
   .rate-table__cell {
     width: 235px;
     font-size: 18px;
-    padding: 17px 24px 13px 24px;
+    padding: 16px 24px 13px 24px;
   }
 }
