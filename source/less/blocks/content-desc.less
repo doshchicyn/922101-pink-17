@@ -9,7 +9,6 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-  letter-spacing: 0.1px;
   color: @clr-dblue;
 
   &--narrow {
@@ -40,12 +39,17 @@
 
 @media (min-width: @desktop-width) {
   .content-desc {
-    padding-bottom: 86px;
+    padding-bottom: 64px;
   }
 
   .content-desc__text {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 162px;
+    padding-right: 162px;
+
+    &--narrow {
+      padding-left: 165px;
+      padding-right: 165px;
+    }
 
     &--wide {
       padding-left: 90px;
