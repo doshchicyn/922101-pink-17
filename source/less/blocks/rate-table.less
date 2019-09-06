@@ -10,6 +10,7 @@
   border-top: none;
   border-left: 2px solid #e5e5e5;
   border-bottom: 2px solid @clr-dblue;
+  overflow: hidden;
 
   &:last-child {
     border-right: 2px solid @clr-dblue;
@@ -40,14 +41,13 @@
     content: "";
     position: absolute;
     display: block;
-    width: 74px;
-    height: 74px;
-    top: 0;
-    left: 0;
+    width: 100%;
+    height: 29px;
+    top: 25px;
+    left: -127px;
     z-index: 2;
-    // background-image: url("../../img/bg-hit-tablet.svg");
-    // background-repeat: no-repeat;
-    background-image: linear-gradient(135deg, #283645 20%, #D22856 20%, #D22856 48%, #283645 48%, #283644 100% );
+    background-color: @clr-red;
+    transform: rotate(-45deg);
   }
 
   &--hidden {
@@ -109,14 +109,25 @@
   .rate-table__hcell {
     width: 155px;
     font-size: 16px;
-    padding-top: 14px;
-    padding-bottom: 11px;
+    padding-top: 12px;
+    padding-bottom: 3px;
 
     &--hidden {
       display: table-cell;
       background-color: #f2f2f2;
       border-left: none;
       border-bottom: none;
+    }
+
+    &--hit::before {
+      left: 8px;
+      top: 4px;
+
+    }
+
+    &--hit::after {
+      top: 10px;
+      left: -60px;
     }
   }
 
