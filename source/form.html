@@ -104,11 +104,11 @@
             <ul class="data-personal__personal-list personal-list">
               <li class="personal-list__item">
                 <label class="personal-list__value" for="personal-list__last-name">Фамилия:</label>
-                <input class="personal-list__field" id="personal-list__last-name" type="text" name="last-name" placeholder="Укажите фамилию *" pattern="[А-Яа-яЁё\s]{1,30}" maxlength="30" title="Только кириллические символы." required>
+                <input class="personal-list__field" id="personal-list__last-name" type="text" name="last-name" placeholder="Укажите фамилию *" pattern="[А-Яа-яЁё\s]{1,30}" maxlength="30" title="Только кириллические символы.">
               </li>
               <li class="personal-list__item">
                 <label class="personal-list__value" for="personal-list__first-name">Имя:</label>
-                <input class="personal-list__field" id="personal-list__first-name" type="text" name="first-name" placeholder="Введите ваше имя *" pattern="[А-Яа-яЁё\s]{1,30}" maxlength="30" title="Только кириллические символы." required>
+                <input class="personal-list__field" id="personal-list__first-name" type="text" name="first-name" placeholder="Введите ваше имя *" pattern="[А-Яа-яЁё\s]{1,30}" maxlength="30" title="Только кириллические символы.">
               </li>
               <li class="personal-list__item">
                 <label class="personal-list__value" for="personal-list__middle-name">Отчество:</label>
@@ -157,8 +157,8 @@
               </li>
               <li class="contact-list__item">
                 <label class="contact-list__value" for="contact-list__email">Адрес почты</label>
-                <div class="contact-list__box" tabindex="0">
-                  <input class="contact-list__field" id="contact-list__email" type="email" name="email" title="Адрес должен быть указан в формате &quot;mail@domain.ru&quot;" placeholder="Введите почту *" required>
+                <div class="contact-list__box email-field" tabindex="0">
+                  <input class="contact-list__field" id="contact-list__email" type="email" name="email" title="Адрес должен быть указан в формате &quot;mail@domain.ru&quot;" placeholder="Введите почту *">
                   <label class="contact-list__icon contact-list__icon--email" for="contact-list__email">Адрес почты</label>
                 </div>
               </li>
@@ -277,8 +277,8 @@
       </div>
     </footer>
 
-    <!-- отображение модального окна - для section добавить modal--error -->
-    <section class="modal-neg modal">
+    <!-- отображение модального окна - для section добавить modal--show -->
+    <section class="modal modal-neg">
       <h2 class="visually-hidden">Всплывающее окно - форма заполнена с ошибками</h2>
       <div class="modal-neg__text-box">
         <p class="modal-neg__title">Что-то пошло не так!</p>
@@ -289,8 +289,8 @@
       </div>
     </section>
 
-    <!-- отображение модального окна - для section добавить modal--complete -->
-    <section class="modal-pos modal">
+    <!-- отображение модального окна - для section добавить modal--show -->
+    <section class="modal modal-pos">
       <h2 class="visually-hidden">Всплывающее окно - форма заполнена корректно</h2>
       <div class="modal-pos__text-box">
         <p class="modal-pos__title">Ваша заявка отправлена</p>
@@ -301,5 +301,6 @@
       </div>
     </section>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

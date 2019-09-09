@@ -47,6 +47,12 @@
   }
 }
 
+.email-field {
+  &--required {
+    border-color: @clr-red;
+  }
+}
+
 .contact-list__field {
   width: 100%;
   padding: 12px 20px;
@@ -62,6 +68,10 @@
 
   &::placeholder {
     color: @clr-dblue;
+  }
+
+  &:invalid {
+    color: @clr-red;
   }
 }
 
