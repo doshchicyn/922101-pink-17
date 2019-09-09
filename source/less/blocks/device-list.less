@@ -1,7 +1,7 @@
 .device-list {
   display: flex;
   flex-wrap: wrap;
-  width: 225px;
+  width: 235px;
 }
 
 .device-list__item {
@@ -9,30 +9,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75px;
+  width: 78px;
   height: 75px;
 }
 
 .device-list__link {
   display: block;
   text-decoration: none;
-  background-repeat: no-repeat;
+  font-size: 0;
 
-  &--itunes {
-    background-image: url("../../img/logo-apple.svg");
+  &--itunes img {
     width: 47px;
     height: 56px;
+    font-size: 14px;
   }
 
-  &--playmarket {
-    background-image: url("../../img/logo-android.svg");
+  &--playmarket img {
     width: 43px;
     height: 47px;
+    font-size: 14px;
   }
 
-  &--msstore {
-    background-image: url("../../img/logo-microsoft.svg");
+  &--msstore img {
     width: 44px;
     height: 41px;
+    font-size: 14px;
   }
 }

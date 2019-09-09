@@ -1,6 +1,6 @@
 .page-footer {
   position: relative;
-  padding-top: 57px;
+  padding-top: 40px;
   padding-right: 0;
   padding-bottom: 40px;
   padding-left: 0;
@@ -49,6 +49,7 @@
 
 .page-footer__copyrights {
   margin: 0;
+  margin-top: 39px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -58,9 +59,9 @@
 .page-footer__link {
   display: inline-block;
   vertical-align: middle;
+  margin-left: 10px;
   width: 27px;
   height: 34px;
-  margin-left: 15px;
 
   &:hover svg path,
   &:focus svg path {
@@ -75,7 +76,10 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    padding: 86px 0 25px 0;
+    padding-top: 36px;
+    padding-right: 0;
+    padding-bottom: 37px;
+    padding-left: 0;
     background-color: @clr-white;
 
     &--hidden {
@@ -92,28 +96,39 @@
 
   .page-footer__box {
     flex-direction: row;
-    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .page-footer__logo {
-    margin-bottom: 0;
-    padding-bottom: 23px;
+    padding: 0;
+    margin: 0;
+    margin-right: 74px;
+    margin-bottom: 14px;
+    width: 147px;
+    height: 40px;
   }
 
   .page-footer__social-list {
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .page-footer__copyrights {
-    align-self: center;
-    padding-bottom: 12px;
+    padding: 0;
+    margin: 0;
+    margin-top: 14px;
+    margin-left: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-top: 71px;
+    padding-bottom: 72px;
+  }
+
+  .page-footer__logo {
+    margin-right: 234px;
   }
 
   .page-footer__copyrights {

@@ -16,7 +16,7 @@
 
 .rest-comment__text {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-size: 14px;
   line-height: 24px;
   color: @clr-dblue;
@@ -43,7 +43,7 @@
 .rest-comment__like-btn {
   font-size: 0;
   padding: 0;
-  margin-right: 19px;
+  margin-right: 17px;
   border: none;
   background-color: transparent;
 
@@ -57,11 +57,16 @@
   }
 }
 
+.rest-comment__like-btn svg {
+  width: 14px;
+  height: 13px;
+}
+
 @media (min-width: @tablet-width) {
-  .rest-comment__box {
+  .rest-comment {
     display: flex;
     flex-direction: column;
-    min-height: 160px;
+    min-height: 155px;
   }
 
   .rest-comment__text {

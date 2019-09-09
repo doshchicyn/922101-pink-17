@@ -1,5 +1,5 @@
 .rate-table__hcell {
-  padding: 19px 15px;
+  padding: 17px 15px;
   width: 280px;
   color: @clr-white;
   font-size: 18px;
@@ -10,6 +10,7 @@
   border-top: none;
   border-left: 2px solid #e5e5e5;
   border-bottom: 2px solid @clr-dblue;
+  overflow: hidden;
 
   &:last-child {
     border-right: 2px solid @clr-dblue;
@@ -30,8 +31,8 @@
     line-height: 30px;
     color: @clr-white;
     font-weight: 400;
-    left: 5px;
-    top: 7px;
+    left: 9px;
+    top: 12px;
     z-index: 3;
     transform: rotate(-45deg);
   }
@@ -40,13 +41,13 @@
     content: "";
     position: absolute;
     display: block;
-    width: 74px;
-    height: 74px;
-    top: 0;
-    left: 0;
+    width: 100%;
+    height: 29px;
+    top: 25px;
+    left: -127px;
     z-index: 2;
-    background-image: url("../../img/bg-hit-tablet.svg");
-    background-repeat: no-repeat;
+    background-color: @clr-red;
+    transform: rotate(-45deg);
   }
 
   &--hidden {
@@ -62,7 +63,7 @@
 
 .rate-table__cell {
   position: relative;
-  padding: 16px 68px 16px 22px;
+  padding: 13px 68px 16px 22px;
   width: 280px;
   font-size: 14px;
   line-height: 30px;
@@ -108,14 +109,24 @@
   .rate-table__hcell {
     width: 155px;
     font-size: 16px;
-    padding-top: 14px;
-    padding-bottom: 11px;
+    padding-top: 12px;
+    padding-bottom: 3px;
 
     &--hidden {
       display: table-cell;
       background-color: #f2f2f2;
       border-left: none;
       border-bottom: none;
+    }
+
+    &--hit::before {
+      left: 8px;
+      top: 4px;
+    }
+
+    &--hit::after {
+      top: 10px;
+      left: -60px;
     }
   }
 
@@ -153,8 +164,18 @@
 @media (min-width: @desktop-width) {
   .rate-table__hcell {
     font-size: 18px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+
+    &--hit::before {
+      left: 11px;
+      top: 11px;
+    }
+
+    &--hit::after {
+      top: 10px;
+      left: -88px;
+    }
   }
 
   .rate-table__rate-value {
@@ -164,6 +185,6 @@
   .rate-table__cell {
     width: 235px;
     font-size: 18px;
-    padding: 17px 24px 13px 24px;
+    padding: 16px 24px 13px 24px;
   }
 }

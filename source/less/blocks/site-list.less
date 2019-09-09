@@ -4,7 +4,7 @@
 
 .site-list__link {
   display: block;
-  padding: 22px 0;
+  padding: 21px 0;
   text-decoration: none;
   color: @clr-white;
   font-size: 18px;
@@ -22,6 +22,12 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .site-list__link {
+    padding: 19px 0;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .site-list {
     display: flex;
@@ -31,7 +37,7 @@
   }
 
   .site-list__item {
-    margin-left: 82px;
+    margin-left: 80px;
   }
 
   .site-list__link {

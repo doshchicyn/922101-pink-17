@@ -14,7 +14,7 @@
   }
 }
 
-.comment-list__image {
+.comment-list__link {
   font-size: 0;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .comment-list__comment_box {
-  padding: 20px 18px;
+  padding: 20px 18px 20px 17px;
 }
 
 @media (min-width: @tablet-width) {
@@ -36,6 +36,7 @@
 
   .comment-list__item {
     flex-basis: 300px;
+    margin-bottom: 20px;
 
     &:last-child {
       margin-bottom: 20px;
@@ -43,7 +44,7 @@
   }
 
   .comment-list__comment_box {
-    padding: 26px 31px 24px 28px;
+    padding: 24px 31px 21px 28px;
   }
 }
 
@@ -59,5 +60,9 @@
     &:last-child {
       margin-bottom: 27px;
     }
+  }
+
+  .comment-list__comment_box {
+    padding: 24px 31px 21px 28px;
   }
 }

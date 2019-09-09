@@ -13,7 +13,7 @@
 
 .contact-options__title {
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -56,11 +56,19 @@
 
   .contact-options__item {
     width: 300px;
-    margin-bottom: 44px;
+    margin-bottom: 48px;
+  }
+
+  .contact-options__title {
+    margin-bottom: 4px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .contact-options {
+    justify-content: space-between;
+  }
+
   .contact-options__item {
     &:nth-child(2) {
       order: 2;
@@ -72,6 +80,6 @@
   }
 
   .contact-options__title {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 }

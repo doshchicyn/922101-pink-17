@@ -1,4 +1,4 @@
-.top-comment__box {
+.top-comment {
   background-color: @clr-grey;
 }
 
@@ -20,7 +20,7 @@
 
 .top-comment__text {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 24px;
   color: @clr-dblue;
@@ -47,7 +47,7 @@
 .top-comment__like-btn {
   font-size: 0;
   padding: 0;
-  margin-right: 19px;
+  margin-right: 17px;
   border: none;
   background-color: transparent;
 
@@ -61,8 +61,13 @@
   }
 }
 
+.top-comment__like-btn svg {
+  width: 14px;
+  height: 13px;
+}
+
 @media (min-width: @tablet-width) {
-  .top-comment__box {
+  .top-comment {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -85,5 +90,11 @@
 
   .top-comment__like-btn {
     margin-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .top-comment__like-text {
+    margin-right: 15px;
   }
 }

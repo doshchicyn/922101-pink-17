@@ -1,23 +1,23 @@
-.features__list {
+.features-list {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.features__item {
-  padding: 0 10px;
-  margin-bottom: 32px;
+.features-list__item {
+  padding: 0;
+  margin-bottom: 30px;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.features__image {
+.features-list__image-box {
   display: none;
 }
 
-.features__title {
+.features-list__title {
   margin: 0;
   font-size: 18px;
   line-height: 24px;
@@ -26,7 +26,7 @@
   margin-bottom: 12px;
 }
 
-.features__description {
+.features-list__description {
   margin: 0;
   font-size: 14px;
   line-height: 24px;
@@ -35,48 +35,47 @@
 }
 
 @media (min-width: @tablet-width) {
-  .features__list {
+  .features-list {
     text-align: left;
   }
 
-  .features__item {
+  .features-list__item {
     padding: 0;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .features__list {
+  .features-list {
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
   }
 
-  .features__item {
+  .features-list__item {
     flex-basis: 300px;
     margin-bottom: 0;
   }
 
-  .features__image {
-    display: inline-block;
-    margin: 0;
+  .features-list__image-box {
+    display: block;
     height: 302px;
-    margin-bottom: 57px;
+    margin-bottom: 56px;
   }
 
-  .features__phone-image {
+  .features-list__image-box img {
     width: 292px;
     height: 302px;
   }
 
-  .features__title {
-    padding: 0 30px;
+  .features-list__title {
+    padding: 0 36px;
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 23px;
   }
 
-  .features__description {
+  .features-list__description {
     padding: 0 30px;
     font-size: 18px;
     line-height: 30px;
