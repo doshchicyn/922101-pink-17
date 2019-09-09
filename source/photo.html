@@ -21,7 +21,7 @@
         <ul class="page-header__menu-list main-menu">
           <li class="main-menu__item main-menu__item--filled">
             <div class="container">
-              <a class="main-menu__logo" href="./index.html">
+              <a class="main-menu__logo" href="index.html">
                 <svg class="main-menu__logo-image main-menu__logo-image--mobile" width="75" height="22" viewBox="0 0 75 22">
                   <g>
                     <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"></path>
@@ -67,13 +67,13 @@
           <li class="main-menu__item">
             <ul class="main-menu__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="./index.html">Главная</a>
+                <a class="site-list__link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link site-list__link--active">Фотографии</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="./form.html">Конкурс</a>
+                <a class="site-list__link" href="form.html">Конкурс</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
@@ -106,9 +106,12 @@
         </div>
         <a class="content-panorama__link" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.jpg 2x">
             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-            <img class="content-panorama__picture" src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фото панорама дня">
+            <img class="content-panorama__picture" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фото панорама дня">
           </picture>
         </a>
         <div class="container">
@@ -136,9 +139,12 @@
             <li class="comment-list__item">
               <a class="comment-list__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.jpg 2x">
                   <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                  <img class="comment-list__picture" src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение автомобиля">
+                  <img class="comment-list__picture" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение автомобиля">
                 </picture>
               </a>
               <div class="comment-list__comment_box rest-comment">
@@ -159,9 +165,12 @@
             <li class="comment-list__item">
               <a class="comment-list__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.jpg 2x">
                   <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                  <img class="comment-list__picture" src="./img/photo-drumset-mobile@1x.jpg" srcset="./img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение барабанов">
+                  <img class="comment-list__picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение барабанов">
                 </picture>
               </a>
               <div class="comment-list__comment_box rest-comment">
@@ -182,9 +191,12 @@
             <li class="comment-list__item">
               <a class="comment-list__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.jpg 2x">
                   <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                  <img class="comment-list__picture" src="./img/photo-window-mobile@1x.jpg" srcset="./img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение отзеркалившего неба в стеклах здания">
+                  <img class="comment-list__picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение отзеркалившего неба в стеклах здания">
                 </picture>
               </a>
               <div class="comment-list__comment_box rest-comment">
@@ -205,9 +217,12 @@
             <li class="comment-list__item">
               <a class="comment-list__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.jpg 2x">
                   <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                  <img class="comment-list__picture" src="./img/photo-fair-mobile@1x.jpg" srcset="./img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение &laquo;Кубанская бахча&raquo;">
+                  <img class="comment-list__picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение &laquo;Кубанская бахча&raquo;">
                 </picture>
               </a>
               <div class="comment-list__comment_box rest-comment">
@@ -228,9 +243,12 @@
             <li class="comment-list__item">
               <a class="comment-list__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.jpg 2x">
                   <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                  <img class="comment-list__picture" src="./img/photo-pov-mobile@1x.jpg" srcset="./img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение взгляда вниз с горы">
+                  <img class="comment-list__picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение взгляда вниз с горы">
                 </picture>
               </a>
               <div class="comment-list__comment_box rest-comment">
@@ -251,9 +269,12 @@
             <li class="comment-list__item">
               <a class="comment-list__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.jpg 2x">
                   <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                  <img class="comment-list__picture" src="./img/photo-wing-mobile@1x.jpg" srcset="./img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение крыла самолета">
+                  <img class="comment-list__picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Изображение крыла самолета">
                 </picture>
               </a>
               <div class="comment-list__comment_box rest-comment">
@@ -280,9 +301,12 @@
         <h2 class="visually-hidden">Редактор Ваших фотографий</h2>
         <div class="container">
           <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.jpg 2x">
             <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-            <img class="content-editor__picture" src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Изображение в редакторе фотографий">
+            <img class="content-editor__picture" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Изображение в редакторе фотографий">
           </picture>
           <form class="content-editor__form upload-form" action="https://echo.htmlacademy.ru" method="post" name="upload-form">
             <div class="upload-form__set-wrap">
@@ -381,6 +405,6 @@
         </p>
       </div>
     </footer>
-    <script src="./js/menu.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
