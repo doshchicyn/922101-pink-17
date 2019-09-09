@@ -8,6 +8,7 @@ var firstName = form.querySelector("[name=first-name]");
 var email = form.querySelector("[name=email]");
 var emailField = form.querySelector(".email-field");
 
+// модальное окно на странице с формой
 closeNeg.addEventListener("click", function(evt) {
     evt.preventDefault();
     popupNeg.classList.remove("modal--show")

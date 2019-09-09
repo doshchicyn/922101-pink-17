@@ -49,6 +49,7 @@
 
 .page-footer__copyrights {
   margin: 0;
+  margin-top: 39px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -58,9 +59,9 @@
 .page-footer__link {
   display: inline-block;
   vertical-align: middle;
+  margin-left: 10px;
   width: 27px;
   height: 34px;
-  margin-left: 15px;
 
   &:hover svg path,
   &:focus svg path {
@@ -75,7 +76,10 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    padding: 36px 0 25px 0;
+    padding-top: 36px;
+    padding-right: 0;
+    padding-bottom: 37px;
+    padding-left: 0;
     background-color: @clr-white;
 
     &--hidden {
@@ -114,10 +118,6 @@
     margin: 0;
     margin-top: 14px;
     margin-left: auto;
-  }
-
-  .page-footer__link {
-    margin-left: 11px;
   }
 }
 
