@@ -17,29 +17,45 @@
 }
 
 .page-footer__logo {
+  position: relative;
   display: block;
   font-size: 0;
   text-decoration: none;
   margin-bottom: 40px;
 
-  & svg {
-    width: 147px;
-    height: 40px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
   }
 
-  &:hover svg path,
-  &:focus svg path {
+  & svg {
+    width: 147px;
+    height: 41px;
+  }
+
+  &[href]:hover svg path,
+  &[href]:focus svg path {
     fill: @clr-red;
   }
 
-  &:active svg > path {
+  &[href]:active svg > path {
     fill-opacity: 0.3;
   }
 
-  &:active svg > g path {
+  &[href]:active svg > g path {
     fill: @clr-dblue;
     fill-opacity: 0.3;
   }
+}
+
+.page-footer__desktop-logo {
+  display: none;
 }
 
 .page-footer__social-list {
@@ -57,11 +73,23 @@
 }
 
 .page-footer__link {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   margin-left: 10px;
   width: 27px;
   height: 34px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
 
   &:hover svg path,
   &:focus svg path {
@@ -129,6 +157,14 @@
 
   .page-footer__logo {
     margin-right: 234px;
+  }
+
+  .page-footer__desktop-logo {
+    display: inline-block;
+  }
+
+  .page-footer__mobile-logo {
+    display: none;
   }
 
   .page-footer__copyrights {
