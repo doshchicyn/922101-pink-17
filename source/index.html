@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <div style="display:none">
+    <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
 
@@ -128,6 +128,7 @@
             <li class="features-list__item">
               <div class="features-list__image-box">
                 <picture>
+                  <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
                   <img class="features-list__phone-image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" alt="Черно-белый скриншот экрана">
                 </picture>
               </div>
@@ -137,6 +138,7 @@
             <li class="features-list__item">
               <div class="features-list__image-box">
                 <picture>
+                  <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
                   <img class="features-list__phone-image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="Розовый скриншот экрана">
                 </picture>
               </div>
@@ -146,6 +148,7 @@
             <li class="features-list__item">
               <div class="features-list__image-box">
                 <picture>
+                  <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
                   <img class="features-list__phone-image" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" alt="Розовый скриншот экрана со смайликом">
                 </picture>
               </div>
@@ -155,8 +158,10 @@
           </ul>
           <div class="content__image-box">
             <picture>
-              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
-              <img class="content__phone-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение телефона со смайликом">
+              <source media="(min-width: 660px)" type="image/webp" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+              <img class="content__phone-image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="Изображение телефона со смайликом">
             </picture>
           </div>
         </div>
@@ -245,9 +250,12 @@
         <h2 class="visually-hidden">Контакты и местоположение на карте</h2>
         <div class="contacts__image-box">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
-            <img class="contacts__map-picture" src="img/bg-map-mobile@1x.jpg" width="320" height="645" alt="Изображение с адресом на карте">
+            <source media="(min-width: 960px)" type="image/webp" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source media="(min-width: 660px)" type="image/webp" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img class="contacts__map-picture" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="645" alt="Изображение с адресом на карте">
           </picture>
         </div>
         <div class="contacts__wrap">
