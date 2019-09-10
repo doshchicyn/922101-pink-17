@@ -17,7 +17,7 @@
   }
 
   &[href]:active {
-    color: @clr-white;
+    color: @clr-red;
     opacity: 0.3;
   }
 }
@@ -46,6 +46,10 @@
     text-transform: capitalize;
     line-height: 18px;
     font-weight: 400;
+
+    &[href]:active {
+      color: @clr-white;
+    }
 
     &--active {
       border-bottom-width: 2px;

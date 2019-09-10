@@ -8,6 +8,7 @@
 }
 
 .main-menu__logo {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -16,6 +17,17 @@
   line-height: 0;
   font-size: 0;
   text-decoration: none;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
 
   &[href]:hover svg path,
   &[href]:focus svg path {
